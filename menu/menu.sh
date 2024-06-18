@@ -303,10 +303,10 @@ menu
 clear
 clear && clear && clear
 clear;clear;clear
-echo -e " $COLOR1╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${COLBG2}                ${WH} • CLOUDVPN TUNNELING •                 ${NC} $COLOR1│ $NC"
-echo -e " $COLOR1╰══════════════════════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1╭══════════════════════════════════════════════════════════╮${NC}"
+echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
+echo -e " $COLOR1│${NC} ${COLBG2}                ${WH} • SRIPT BY VPN EXPRESS •                 ${NC} $COLOR1│ $NC"
+echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ OS            ${COLOR1}: ${WH}$MODEL2${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ RAM           ${COLOR1}: ${WH}$tram / $uram MB${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ DATE          ${COLOR1}: ${WH}$DATE2 WIB${NC}"
@@ -317,7 +317,7 @@ echo -e " $COLOR1│$NC${WH} ❈ City          ${COLOR1}: ${WH}$CITY${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ IP VPS        ${COLOR1}: ${WH}$MYIP${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ DOMAIN        ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
 echo -e " $COLOR1│$NC${WH} ❈ NSDomain      ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
-echo -e " $COLOR1╰══════════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e "    $COLOR1╭═════════════════ • ${NC}${WH}STATUS SERVER${NC}${COLOR1} • ═══════════════╮${NC}"
 echo -e "     ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
 echo -e "      ${WH} UDP CUSTOM : ${status_udp} ${WH} NOOBZVPNS : ${stat_noobz} ${WH} TROJAN-GO : ${stat_trgo} ${NC}"
@@ -429,7 +429,7 @@ res1() {
 }
 clear
 echo -e "$COLOR1 ╭══════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}RESTART SERVICE VPS             ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG2}          ${WH}RESTART SERVICE VPS             ${NC} $COLOR1 $NC"
 echo -e "$COLOR1 ╰══════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -e "  \033[1;91m Restart All Service... \033[1;37m"
@@ -447,9 +447,8 @@ chmod +x install_up.sh
 ./install_up.sh
 }
 echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC ${WH} ❈ Versi   ${NC}: ${WH}$(cat /opt/.ver) Version${NC}$COLOR1"
 echo -e "$COLOR1│$NC ${WH} ❈ Client ${NC} : ${WH}$author${NC}"
-echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate hari${NC}$COLOR1"
+echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate Days${NC}$COLOR1"
 echo -e "$COLOR1│$NC ${WH} ❈ Expiry ${NC} : ${WH}$Exp2 $sts ${NC}$COLOR1"
 echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e ""
