@@ -134,13 +134,13 @@ yesterday_txv=NULL
 fi
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
-status_ws="${COLOR1}ON${NC}"
+status_ws="${Green_font_prefix}ON${NC}"
 else
 status_ws="${RED}OFF${NC}"
 fi
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-status_nginx="${COLOR1}ON${NC}"
+status_nginx="${Green_font_prefix}ON${NC}"
 else
 status_nginx="${RED}OFF${NC}"
 systemctl start nginx
@@ -156,14 +156,14 @@ fi
 rm -rf /etc/status
 xray=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray == "running" ]]; then
-status_xray="${GREEN}ON${NC}"
+status_xray="${Green_font_prefix}ON${NC}"
 else
 status_xray="${RED}OFF${NC}"
 fi
 
 stat_noobz=$( systemctl status noobzvpns | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_noobz == "running" ]]; then
-    stat_noobz="${COLOR1}ON${NC}"
+    stat_noobz="${Green_font_prefix}ON${NC}"
 else
     stat_noobz="${RED}OFF${NC}"
     systemctl start noobzvpns
@@ -172,14 +172,14 @@ fi
 # // Dropbear
 dropbear_status=$(/etc/init.d/dropbear status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $dropbear_status == "running" ]]; then
-   status_beruangjatuh="${COLOR1}ON${NC}"
+   status_beruangjatuh="${Green_font_prefix}ON${NC}"
 else
    status_beruangjatuh="${RED}OFF${NC}"
 fi
 
 udp_custom=$( systemctl status udp-custom | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $udp_custom == "running" ]]; then
-    status_udp="${COLOR1}ON${NC}"
+    status_udp="${Green_font_prefix}ON${NC}"
 else
     status_udp="${RED}OFF${NC}"
     systemctl start udp-custom
@@ -187,7 +187,7 @@ fi
 
 stat_trgo=$( systemctl status trojan-go | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_trgo == "running" ]]; then
-    stat_trgo="${COLOR1}ON${NC}"
+    stat_trgo="${Green_font_prefix}ON${NC}"
 else
     stat_trgo="${RED}OFF${NC}"
     systemctl start trojan-go
@@ -197,7 +197,7 @@ fi
 
 # STATUS EXPIRED ACTIVE
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
-Info="${Green_font_prefix}(Registered)${Font_color_suffix}"
+Info="${Green_font_prefix}[Active]${Font_color_suffix}"
 Error="${Green_font_prefix}${Font_color_suffix}${Red_font_prefix}[EXPIRED]${Font_color_suffix}"
 
 today=$(date -d "0 days" +"%Y-%m-%d")
@@ -304,19 +304,19 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${COLBG2}                ${WH} • SRIPT BY VPN EXPRESS •                 ${NC} $COLOR1│ $NC"
+echo -e " $COLOR1│${NC} ${COLBG2}               ${WH} • SRIPT BY VPN EXPRESS •                ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ OS            ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ RAM           ${COLOR1}: ${WH}$tram / $uram MB${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ DATE          ${COLOR1}: ${WH}$DATE2 WIB${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ UPTIME        ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
-#echo -e " $COLOR1│$NC${WH} ❈ TIME          ${COLOR1}: ${WH}$TIMEZONE${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ ISP           ${COLOR1}: ${WH}$ISP${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ City          ${COLOR1}: ${WH}$CITY${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ IP VPS        ${COLOR1}: ${WH}$MYIP${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ DOMAIN        ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
-echo -e " $COLOR1│$NC${WH} ❈ NSDomain      ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
+echo -e " $COLOR1│$NC${WH} ❈ OS          ${COLOR1}: ${WH}$MODEL2${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ RAM         ${COLOR1}: ${WH}$tram / $uram MB${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ DATE        ${COLOR1}: ${WH}$DATE2 WIB${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ UPTIME      ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
+#echo -e " $COLOR1│$NC${WH} ❈ TIME        ${COLOR1}: ${WH}$TIMEZONE${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ ISP         ${COLOR1}: ${WH}$ISP${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ City        ${COLOR1}: ${WH}$CITY${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ IP VPS      ${COLOR1}: ${WH}$MYIP${NC}"
+echo -e " $COLOR1│$NC${WH} ❈ DOMAIN      ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
+echo -e " $COLOR1│$NC${WH} ❈ NSDomain    ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e "    $COLOR1╭═════════════════ • ${NC}${WH}STATUS SERVER${NC}${COLOR1} • ═══════════════╮${NC}"
 echo -e "     ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
