@@ -132,6 +132,7 @@ yesterday_rxv=NULL
 yesterday_tx=NULL
 yesterday_txv=NULL
 fi
+Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
 status_ws="${Green_font_prefix}ON${NC}"
