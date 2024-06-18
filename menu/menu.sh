@@ -156,7 +156,7 @@ fi
 rm -rf /etc/status
 xray=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray == "running" ]]; then
-status_xray="${COLOR1}ON${NC}"
+status_xray="${GREEN}ON${NC}"
 else
 status_xray="${RED}OFF${NC}"
 fi
