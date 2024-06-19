@@ -219,6 +219,17 @@ total_ssh=$(grep -c -E "^### " "/etc/xray/ssh")
 jumlah_noobz=$(grep -c -E "^### " "/etc/xray/noob")
 # TOTAL CREATE ACC TROJAN-GO
 jumlah_trgo=$(grep -c -E "^### " "/etc/trojan-go/trgo")
+d1=$(date -d "$Exp2" +%s)
+d2=$(date -d "$today" +%s)
+certificate=$(( (d1 - d2) / 86400 ))
+domain=$(cat /etc/xray/domain)
+function restartservice(){
+DATE=$(date +'%Y-%m-%d')
+datediff() {
+d1=$(date -d "$1" +%s)
+d2=$(date -d "$2" +%s)
+echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
+}
 function m-ip2(){
 clear
 cd
@@ -307,21 +318,22 @@ clear;clear;clear
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│ ${Green_font_prefix}               • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│$NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1  ═════════════════════════════════════════════════════${NC}"
-echo -e " $COLOR1  $NC${WH} 🪼 OS         ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e " $COLOR1  $NC${WH} 🪼 RAM        ${COLOR1}: ${WH}$tram / $uram ${NC}"
-echo -e " $COLOR1  $NC${WH} ❈ DATE       ${COLOR1}: ${WH}$DATE2 WIB${NC}"
-#echo -e " $COLOR1  $NC${WH} ❈ UPTIME     ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
-#echo -e " $COLOR1  $NC${WH} ❈ TIME       ${COLOR1}: ${WH}$TIMEZONE${NC}"
-echo -e " $COLOR1  $NC${WH} ❈ ISP        ${COLOR1}: ${WH}$ISP${NC}"
-echo -e " $COLOR1  $NC${WH} ❈ City       ${COLOR1}: ${WH}$CITY${NC}"
-echo -e " $COLOR1  $NC${WH} ❈ IP VPS     ${COLOR1}: ${WH}$MYIP${NC}"
-echo -e " $COLOR1  $NC${WH} ❈ DOMAIN     ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
-echo -e " $COLOR1  $NC${WH} ❈ NSDomain   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
-echo -e " $COLOR1  $NC${WH} ❈ Bandwidth  ${COLOR1}: ${WH}Hari ini = ${WH}$today_tx    Bulan ini = ${Green_font_prefix}$month_tx $month_txv$COLOR1${NC}"
+echo -e " $COLOR1   ═════════════════════════════════════════════════════${NC}"
+echo -e " $COLOR1  $NC${WH} ❤️ OS         ${COLOR1}: ${WH}$MODEL2${NC}"
+echo -e " $COLOR1  $NC${WH} 🧡 RAM        ${COLOR1}: ${WH}$tram / $uram ${NC}"
+echo -e " $COLOR1  $NC${WH} 💛 DATE       ${COLOR1}: ${WH}$DATE2 WIB${NC}"
+#echo -e " $COLOR1  $NC${WH}  UPTIME     ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
+#echo -e " $COLOR1  $NC${WH}  TIME       ${COLOR1}: ${WH}$TIMEZONE${NC}"
+echo -e " $COLOR1  $NC${WH} 🤍 ISP        ${COLOR1}: ${WH}$ISP${NC}"
+echo -e " $COLOR1  $NC${WH} 💚 City       ${COLOR1}: ${WH}$CITY${NC}"
+echo -e " $COLOR1  $NC${WH} 🩵 IP VPS     ${COLOR1}: ${WH}$MYIP${NC}"
+echo -e " $COLOR1  $NC${WH} 💙 DOMAIN     ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
+echo -e " $COLOR1  $NC${WH} 💜 NSDomain   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
+echo -e " $COLOR1  $NC${WH} 🩶 Bandwidth  ${COLOR1}: ${WH}Hari ini = ${WH}$today_txv, Bulan ini = ${WH}$month_tx $month_txv$COLOR1${NC}"
+echo -e " $COLOR1  $NC${WH} 🩷 Masa Aktif ${COLOR1}: ${WH}$certificate Hari [$Exp2] $sts ${NC}$COLOR1" 
 echo -e " $COLOR1   ═════════════════════════════════════════════════════${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│ ${Green_font_prefix}               • $author •         $NC"
+echo -e " $COLOR1│ ${GREEN}               Name : • $author •         $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e "    $COLOR1                 • ${NC}${COLOR1}STATUS SERVER${NC}${COLOR1} •                ${NC}"
 echo -e "     ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
