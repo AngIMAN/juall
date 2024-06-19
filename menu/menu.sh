@@ -219,17 +219,6 @@ total_ssh=$(grep -c -E "^### " "/etc/xray/ssh")
 jumlah_noobz=$(grep -c -E "^### " "/etc/xray/noob")
 # TOTAL CREATE ACC TROJAN-GO
 jumlah_trgo=$(grep -c -E "^### " "/etc/trojan-go/trgo")
-d1=$(date -d "$Exp2" +%s)
-d2=$(date -d "$today" +%s)
-certificate=$(( (d1 - d2) / 86400 ))
-domain=$(cat /etc/xray/domain)
-function restartservice(){
-DATE=$(date +'%Y-%m-%d')
-datediff() {
-d1=$(date -d "$1" +%s)
-d2=$(date -d "$2" +%s)
-echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
-}
 function m-ip2(){
 clear
 cd
