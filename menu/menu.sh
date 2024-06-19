@@ -305,7 +305,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${Green_font_prefix}               • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│ $NC"
+echo -e " $COLOR1│ ${Green_font_prefix}               • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ OS          ${COLOR1}: ${WH}$MODEL2${NC}"
@@ -319,6 +319,10 @@ echo -e " $COLOR1│$NC${WH} ❈ IP VPS      ${COLOR1}: ${WH}$MYIP${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ DOMAIN      ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
 echo -e " $COLOR1│$NC${WH} ❈ NSDomain    ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
+echo -e "$COLOR1   ╭══════════════════════════════════════════════════════╮${NC}"
+echo -e "$COLOR1   │$NC  ${WH}Total    $COLOR1│${NC}  ${WH}Hari ini      ${WH}Kemarin      ${WH}Bulan ini         ${NC}"
+echo -e "$COLOR1   │$NC ${WH}Bantwidth $COLOR1│${NC}  ${WH}$today_tx $today_txv    ${WH}$yesterday_tx $yesterday_txv     ${Green_font_prefix}$month_tx $month_txv$COLOR1${NC}"
+echo -e "$COLOR1   ╰══════════════════════════════════════════════════════╯${NC}"
 echo -e "    $COLOR1╭═════════════════ • ${NC}${WH}STATUS SERVER${NC}${COLOR1} • ═══════════════╮${NC}"
 echo -e "     ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
 echo -e "      ${WH} UDP CUSTOM : ${status_udp} ${WH} NOOBZVPNS : ${stat_noobz} ${WH} TROJAN-GO : ${stat_trgo} ${NC}"
@@ -342,10 +346,6 @@ else
 ressee="menu"
 bottt="menu"
 fi
-echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC  ${WH}Total    $COLOR1│${NC}     ${WH}Hari ini       ${WH}Kemarin       ${WH}Bulan ini         ${NC}"
-echo -e "$COLOR1│$NC ${WH}Bantwidth $COLOR1│${NC}   ${WH}$today_tx $today_txv     ${WH}$yesterday_tx $yesterday_txv      $Green_font_prefix}$month_tx $month_txv$COLOR1${NC}"
-echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 DATE=$(date +'%Y-%m-%d')
 datediff() {
 d1=$(date -d "$1" +%s)
