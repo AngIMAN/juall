@@ -33,7 +33,7 @@ echo -ne
 else
 systemctl stop nginx
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC}${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}$COLOR1│ $NC"
+echo -e "$COLOR1│${NC}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}$COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│            ${RED}PERMISSION DENIED !${NC}                  $COLOR1│"
@@ -143,7 +143,7 @@ nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' 
 if [[ $nginx == "running" ]]; then
 status_nginx="${Green_font_prefix}ON${NC}"
 else
-status_nginx="${RED}OFF${NC}"
+status_nginx="${Red_background_prefix}OFF${NC}"
 systemctl start nginx
 fi
 if [[ -e /usr/bin/kyt ]]; then
@@ -159,14 +159,14 @@ xray=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 |
 if [[ $xray == "running" ]]; then
 status_xray="${Green_font_prefix}ON${NC}"
 else
-status_xray="${RED}OFF${NC}"
+status_xray="${Red_background_prefix}OFF${NC}"
 fi
 
 stat_noobz=$( systemctl status noobzvpns | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_noobz == "running" ]]; then
     stat_noobz="${Green_font_prefix}ON${NC}"
 else
-    stat_noobz="${RED}OFF${NC}"
+    stat_noobz="${Red_background_prefix}OFF${NC}"
     systemctl start noobzvpns
 fi
 
@@ -175,14 +175,14 @@ dropbear_status=$(/etc/init.d/dropbear status | grep Active | awk '{print $3}' |
 if [[ $dropbear_status == "running" ]]; then
    status_beruangjatuh="${Green_font_prefix}ON${NC}"
 else
-   status_beruangjatuh="${RED}OFF${NC}"
+   status_beruangjatuh="${Red_background_prefix}OFF${NC}"
 fi
 
 udp_custom=$( systemctl status udp-custom | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $udp_custom == "running" ]]; then
     status_udp="${Green_font_prefix}ON${NC}"
 else
-    status_udp="${RED}OFF${NC}"
+    status_udp="${Red_background_prefix}OFF${NC}"
     systemctl start udp-custom
 fi
 
@@ -190,7 +190,7 @@ stat_trgo=$( systemctl status trojan-go | grep Active | awk '{print $3}' | sed '
 if [[ $stat_trgo == "running" ]]; then
     stat_trgo="${Green_font_prefix}ON${NC}"
 else
-    stat_trgo="${RED}OFF${NC}"
+    stat_trgo="${Red_background_prefix}OFF${NC}"
     systemctl start trojan-go
 fi
 
@@ -198,7 +198,7 @@ fi
 
 # STATUS EXPIRED ACTIVE
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
-Info="${Green_font_prefix}[Active]${Font_color_suffix}"
+Info="${Green_font_prefix}Active${Font_color_suffix}"
 Error="${Green_font_prefix}${Font_color_suffix}${Red_font_prefix}[EXPIRED]${Font_color_suffix}"
 
 today=$(date -d "0 days" +"%Y-%m-%d")
@@ -226,9 +226,9 @@ if [[ -e /etc/github/api ]]; then
 m-ip
 else
 mkdir /etc/github
-echo "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" > /etc/github/api
-echo "vpnrmbl@gmail.com" > /etc/github/email
-echo "RMBL-VPN" > /etc/github/username
+echo "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" > /etc/github/api
+echo "imanfals51@gmail.com" > /etc/github/email
+echo "AngIMAN" > /etc/github/username
 m-ip
 fi
 }
@@ -305,7 +305,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${COLBG2}               ${WH} • SRIPT BY VPN EXPRESS •                ${NC} $COLOR1│ $NC"
+echo -e " $COLOR1│${NC} ${Green_font_prefix}              ${WH} • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ OS          ${COLOR1}: ${WH}$MODEL2${NC}"
