@@ -143,7 +143,7 @@ nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' 
 if [[ $nginx == "running" ]]; then
 status_nginx="${Green_font_prefix}ON${NC}"
 else
-status_nginx="${Red_background_prefix}OFF${NC}"
+status_nginx="${Red_font_prefix}OFF${NC}"
 systemctl start nginx
 fi
 if [[ -e /usr/bin/kyt ]]; then
@@ -159,14 +159,14 @@ xray=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 |
 if [[ $xray == "running" ]]; then
 status_xray="${Green_font_prefix}ON${NC}"
 else
-status_xray="${Red_background_prefix}OFF${NC}"
+status_xray="${Red_font_prefix}OFF${NC}"
 fi
 
 stat_noobz=$( systemctl status noobzvpns | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_noobz == "running" ]]; then
     stat_noobz="${Green_font_prefix}ON${NC}"
 else
-    stat_noobz="${Red_background_prefix}OFF${NC}"
+    stat_noobz="${Red_font_prefix}OFF${NC}"
     systemctl start noobzvpns
 fi
 
@@ -175,14 +175,14 @@ dropbear_status=$(/etc/init.d/dropbear status | grep Active | awk '{print $3}' |
 if [[ $dropbear_status == "running" ]]; then
    status_beruangjatuh="${Green_font_prefix}ON${NC}"
 else
-   status_beruangjatuh="${Red_background_prefix}OFF${NC}"
+   status_beruangjatuh="${Red_font_prefix}OFF${NC}"
 fi
 
 udp_custom=$( systemctl status udp-custom | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $udp_custom == "running" ]]; then
     status_udp="${Green_font_prefix}ON${NC}"
 else
-    status_udp="${Red_background_prefix}OFF${NC}"
+    status_udp="${Red_font_prefix}OFF${NC}"
     systemctl start udp-custom
 fi
 
@@ -190,7 +190,7 @@ stat_trgo=$( systemctl status trojan-go | grep Active | awk '{print $3}' | sed '
 if [[ $stat_trgo == "running" ]]; then
     stat_trgo="${Green_font_prefix}ON${NC}"
 else
-    stat_trgo="${Red_background_prefix}OFF${NC}"
+    stat_trgo="${Red_font_prefix}OFF${NC}"
     systemctl start trojan-go
 fi
 
@@ -305,7 +305,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${Green_font_prefix}              ${WH} • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│ $NC"
+echo -e " $COLOR1│${NC} ${Green_font_prefix}               • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│ $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│$NC${WH} ❈ OS          ${COLOR1}: ${WH}$MODEL2${NC}"
@@ -343,8 +343,8 @@ ressee="menu"
 bottt="menu"
 fi
 echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC  ${WH}Total    $COLOR1│${NC}     ${WH}Today       ${WH}Yesterday       ${WH}Month         ${NC}"
-echo -e "$COLOR1│$NC ${WH}Bantwidth $COLOR1│${NC}   ${WH}$today_tx $today_txv     ${WH}$yesterday_tx $yesterday_txv      ${WH}$month_tx $month_txv$COLOR1${NC}"
+echo -e "$COLOR1│$NC  ${WH}Total    $COLOR1│${NC}     ${WH}Hari ini       ${WH}Kemarin       ${WH}Bulan ini         ${NC}"
+echo -e "$COLOR1│$NC ${WH}Bantwidth $COLOR1│${NC}   ${WH}$today_tx $today_txv     ${WH}$yesterday_tx $yesterday_txv      $Green_font_prefix}$month_tx $month_txv$COLOR1${NC}"
 echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 DATE=$(date +'%Y-%m-%d')
 datediff() {
