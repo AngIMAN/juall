@@ -458,8 +458,6 @@ echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate Days${NC}$COLO
 echo -e "$COLOR1│$NC ${WH} ❈ Expiry ${NC} : ${WH}$Exp2 $sts ${NC}$COLOR1"
 echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e ""
-
-esac
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
 01 | 1) clear ; m-sshovpn ;;
