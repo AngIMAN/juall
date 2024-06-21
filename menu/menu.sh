@@ -33,7 +33,7 @@ echo -ne
 else
 systemctl stop nginx
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC}${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}$COLOR1│ $NC"
+echo -e "$COLOR1│${NC}          ${WH}• AUTOSCRIPT PREMIUM •                 ${NC}$COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│            ${RED}PERMISSION DENIED !${NC}                  $COLOR1│"
@@ -88,6 +88,9 @@ CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
+d1=$(date -d "$Exp2" +%s)
+d2=$(date -d "$today" +%s)
+certificate=$(( (d1 - d2) / 86400 ))
 vnstat_profile=$(vnstat | sed -n '3p' | awk '{print $1}' | grep -o '[^:]*')
 vnstat -i ${vnstat_profile} >/etc/t1
 bulan=$(date +%b)
@@ -132,17 +135,18 @@ yesterday_rxv=NULL
 yesterday_tx=NULL
 yesterday_txv=NULL
 fi
+Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
-status_ws="${COLOR1}ON${NC}"
+status_ws="${Green_font_prefix}ON${NC}"
 else
 status_ws="${RED}OFF${NC}"
 fi
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-status_nginx="${COLOR1}ON${NC}"
+status_nginx="${Green_font_prefix}ON${NC}"
 else
-status_nginx="${RED}OFF${NC}"
+status_nginx="${Red_font_prefix}OFF${NC}"
 systemctl start nginx
 fi
 if [[ -e /usr/bin/kyt ]]; then
@@ -156,40 +160,40 @@ fi
 rm -rf /etc/status
 xray=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $xray == "running" ]]; then
-status_xray="${COLOR1}ON${NC}"
+status_xray="${Green_font_prefix}ON${NC}"
 else
-status_xray="${RED}OFF${NC}"
+status_xray="${Red_font_prefix}OFF${NC}"
 fi
 
 stat_noobz=$( systemctl status noobzvpns | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_noobz == "running" ]]; then
-    stat_noobz="${COLOR1}ON${NC}"
+    stat_noobz="${Green_font_prefix}ON${NC}"
 else
-    stat_noobz="${RED}OFF${NC}"
+    stat_noobz="${Red_font_prefix}OFF${NC}"
     systemctl start noobzvpns
 fi
 
 # // Dropbear
 dropbear_status=$(/etc/init.d/dropbear status | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $dropbear_status == "running" ]]; then
-   status_beruangjatuh="${COLOR1}ON${NC}"
+   status_beruangjatuh="${Green_font_prefix}ON${NC}"
 else
-   status_beruangjatuh="${RED}OFF${NC}"
+   status_beruangjatuh="${Red_font_prefix}OFF${NC}"
 fi
 
 udp_custom=$( systemctl status udp-custom | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $udp_custom == "running" ]]; then
-    status_udp="${COLOR1}ON${NC}"
+    status_udp="${Green_font_prefix}ON${NC}"
 else
-    status_udp="${RED}OFF${NC}"
+    status_udp="${Red_font_prefix}OFF${NC}"
     systemctl start udp-custom
 fi
 
 stat_trgo=$( systemctl status trojan-go | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $stat_trgo == "running" ]]; then
-    stat_trgo="${COLOR1}ON${NC}"
+    stat_trgo="${Green_font_prefix}ON${NC}"
 else
-    stat_trgo="${RED}OFF${NC}"
+    stat_trgo="${Red_font_prefix}OFF${NC}"
     systemctl start trojan-go
 fi
 
@@ -197,7 +201,7 @@ fi
 
 # STATUS EXPIRED ACTIVE
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
-Info="${Green_font_prefix}(Registered)${Font_color_suffix}"
+Info="${Green_font_prefix}Active${Font_color_suffix}"
 Error="${Green_font_prefix}${Font_color_suffix}${Red_font_prefix}[EXPIRED]${Font_color_suffix}"
 
 today=$(date -d "0 days" +"%Y-%m-%d")
@@ -225,9 +229,9 @@ if [[ -e /etc/github/api ]]; then
 m-ip
 else
 mkdir /etc/github
-echo "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" > /etc/github/api
-echo "vpnrmbl@gmail.com" > /etc/github/email
-echo "RMBL-VPN" > /etc/github/username
+echo "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" > /etc/github/api
+echo "imanfals51@gmail.com" > /etc/github/email
+echo "AngIMAN" > /etc/github/username
 m-ip
 fi
 }
@@ -303,26 +307,32 @@ menu
 clear
 clear && clear && clear
 clear;clear;clear
-echo -e " $COLOR1╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│${NC} ${COLBG1}                ${WH} • CLOUDVPN TUNNELING •                 ${NC} $COLOR1│ $NC"
-echo -e " $COLOR1╰══════════════════════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1╭══════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ OS            ${COLOR1}: ${WH}$MODEL2${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ RAM           ${COLOR1}: ${WH}$tram / $uram MB${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ DATE          ${COLOR1}: ${WH}$DATE2 WIB${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ UPTIME        ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
-#echo -e " $COLOR1│$NC${WH} ❈ TIME          ${COLOR1}: ${WH}$TIMEZONE${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ ISP           ${COLOR1}: ${WH}$ISP${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ City          ${COLOR1}: ${WH}$CITY${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ IP VPS        ${COLOR1}: ${WH}$MYIP${NC}"
-echo -e " $COLOR1│$NC${WH} ❈ DOMAIN        ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
-echo -e " $COLOR1│$NC${WH} ❈ NSDomain      ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
-echo -e " $COLOR1╰══════════════════════════════════════════════════════════╯${NC}"
-echo -e "    $COLOR1╭═════════════════ • ${NC}${WH}STATUS SERVER${NC}${COLOR1} • ═══════════════╮${NC}"
+echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
+echo -e " $COLOR1│ ${Green_font_prefix}               • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│$NC"
+echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1   ═════════════════════════════════════════════════════${NC}"
+echo -e " $COLOR1  $NC${WH} 🩷 OS          ${COLOR1}: ${WH}$MODEL2${NC}"
+echo -e " $COLOR1  $NC${WH} ❤️ RAM         ${COLOR1}: ${WH}$tram / $uram ${NC}"
+echo -e " $COLOR1  $NC${WH} 🧡 DATE        ${COLOR1}: ${WH}$DATE2 WIB${NC}"
+#echo -e " $COLOR1  $NC${WH}  UPTIME      ${COLOR1}: ${WH}$uphours $upminutes $uptimecek"
+#echo -e " $COLOR1  $NC${WH}  TIME        ${COLOR1}: ${WH}$TIMEZONE${NC}"
+echo -e " $COLOR1  $NC${WH} 💛 ISP         ${COLOR1}: ${WH}$ISP${NC}"
+echo -e " $COLOR1  $NC${WH} 💚 CPU         ${COLOR1}: ${WH}$cpu_usage${NC}"
+echo -e " $COLOR1  $NC${WH} 🩵 City        ${COLOR1}: ${WH}$CITY${NC}"
+echo -e " $COLOR1  $NC${WH} 🤍 IP VPS      ${COLOR1}: ${WH}$MYIP${NC}"
+echo -e " $COLOR1  $NC${WH} 💛 DOMAIN      ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
+echo -e " $COLOR1  $NC${WH} 🧡 NSDomain    ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
+echo -e " $COLOR1  $NC${WH} ❤️ Bandwidth   ${COLOR1}: ${WH}Hari= ${WH}$today_tx $today_txv, Bulanini = ${green}$month_tx $month_txv$COLOR1${NC}"
+echo -e " $COLOR1  $NC${WH} 🩷 Masa Aktif  ${COLOR1}: ${WH}$certificate Hari [$Exp2] $sts ${NC}$COLOR1" 
+echo -e " $COLOR1   ═════════════════════════════════════════════════════${NC}"
+echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
+echo -e " $COLOR1│ ${WH}               Name  :  • $author •         $NC"
+echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
+echo -e "    $COLOR1                              ${NC}"
 echo -e "     ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
 echo -e "      ${WH} UDP CUSTOM : ${status_udp} ${WH} NOOBZVPNS : ${stat_noobz} ${WH} TROJAN-GO : ${stat_trgo} ${NC}"
 echo -e "    $COLOR1╰═══════════════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1╭═════════════════════ • ${WH}LIST MENU${NC}${COLOR1} • ═════════════════════╮${NC}"
+echo -e " $COLOR1╭═════════════════════ •{${WH}LIST MENU${NC}${COLOR1}}• ═════════════════════╮${NC}"
 echo -e " $COLOR1│$NC ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}SSH-WS    ${WH}[${COLOR1}Menu${WH}] ($total_ssh) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}BOT PANEL  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
 echo -e " $COLOR1│$NC ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}VMESS     ${WH}[${COLOR1}Menu${WH}] ($vmess) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}BOT NOTIF  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"    
 echo -e " $COLOR1│$NC ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}VLESS     ${WH}[${COLOR1}Menu${WH}] ($vless) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UPDATE     ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"   
@@ -341,10 +351,6 @@ else
 ressee="menu"
 bottt="menu"
 fi
-echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC  ${WH}Total    $COLOR1│${NC}     ${WH}Today       ${WH}Yesterday       ${WH}Month         ${NC}"
-echo -e "$COLOR1│$NC ${WH}Bantwidth $COLOR1│${NC}   ${WH}$today_tx $today_txv     ${WH}$yesterday_tx $yesterday_txv      ${WH}$month_tx $month_txv$COLOR1${NC}"
-echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 DATE=$(date +'%Y-%m-%d')
 datediff() {
 d1=$(date -d "$1" +%s)
@@ -429,7 +435,7 @@ res1() {
 }
 clear
 echo -e "$COLOR1 ╭══════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}RESTART SERVICE VPS             ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG2}          ${WH}RESTART SERVICE VPS             ${NC} $COLOR1 $NC"
 echo -e "$COLOR1 ╰══════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -e "  \033[1;91m Restart All Service... \033[1;37m"
@@ -447,9 +453,8 @@ chmod +x install_up.sh
 ./install_up.sh
 }
 echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC ${WH} ❈ Versi   ${NC}: ${WH}$(cat /opt/.ver) Version${NC}$COLOR1"
 echo -e "$COLOR1│$NC ${WH} ❈ Client ${NC} : ${WH}$author${NC}"
-echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate hari${NC}$COLOR1"
+echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate Days${NC}$COLOR1"
 echo -e "$COLOR1│$NC ${WH} ❈ Expiry ${NC} : ${WH}$Exp2 $sts ${NC}$COLOR1"
 echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e ""
@@ -475,7 +480,4 @@ case $opt in
 #88 | 88) clear ; new ;;
 77 | 77) clear ; newx ;;
 99 | 99) clear ; passwd ;;
-100) clear ; $up2u ;;
-00 | 0) clear ; menu ;;
-*) clear ; menu ;;
 esac
