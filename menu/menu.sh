@@ -458,6 +458,7 @@ echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate Days${NC}$COLO
 echo -e "$COLOR1│$NC ${WH} ❈ Expiry ${NC} : ${WH}$Exp2 $sts ${NC}$COLOR1"
 echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e ""
+#!/bin/bash
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 colornow=$(cat /etc/rmbl/theme/color.conf)
 NC="\e[0m"
