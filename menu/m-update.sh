@@ -51,6 +51,7 @@ rm -rf trialvless
 rm -rf trialtrojan
 rm -rf trialssh
 rm -rf bantwidth
+rm -rf ws-stunnel
 
 # download menu
 cd /usr/bin
@@ -89,6 +90,7 @@ rm -rf trialtrojan
 rm -rf trialssh
 rm -rf autocpu
 rm -rf bantwidth
+rm -rf ws-stunnel
 
 
 fun_bar() {
@@ -151,6 +153,7 @@ wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/AngIMAN/juall
 wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/AngIMAN/juall/main/menu/trialssh.sh" && chmod +x /usr/bin/trialssh
 wget -q -O /usr/bin/autocpu "https://raw.githubusercontent.com/AngIMAN/juall/main/install/autocpu.sh" && chmod +x /usr/bin/autocpu
 wget -q -O /usr/bin/bantwidth "https://raw.githubusercontent.com/AngIMAN/juall/main/install/bantwidth" && chmod +x /usr/bin/bantwidth
+wget -q -O /usr/bin/autocpu "https://raw.githubusercontent.com/AngIMAN/juall/main/sshws/ws-stunnel" && chmod +x /usr/bin/autocpu
 chmod +x menu
 chmod +x m-vmess
 chmod +x m-vless
@@ -180,6 +183,7 @@ chmod +x trialtrojan
 chmod +x trialssh
 chmod +x autocpu
 chmod +x bantwidth
+chmod +x ws-stunnel
 clear
 
 }
