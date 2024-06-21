@@ -480,3 +480,4 @@ case $opt in
 #88 | 88) clear ; new ;;
 77 | 77) clear ; newx ;;
 99 | 99) clear ; passwd ;;
+esac
