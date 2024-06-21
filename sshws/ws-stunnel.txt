@@ -1,5 +1,3 @@
-#!/bin/bash
-author=$(cat /etc/profil)
 import socket, threading, thread, select, signal, sys, time, getopt
 
 # Listen
