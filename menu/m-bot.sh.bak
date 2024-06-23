@@ -2,7 +2,7 @@
 ipsaya=$(curl -sS ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/awanklod/izin_jual/main/ip"
+data_ip="https://raw.githubusercontent.com/AngIMAN/izin_jual/main/ip"
 checking_sc() {
     useexp=$(curl -sS $data_ip | grep $ipsaya | awk '{print $3}')
     if [[ $date_list < $useexp ]]; then
@@ -16,7 +16,7 @@ checking_sc() {
         echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
         echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
         echo -e "             \033[0;33mContact Your Admin ${NC}"
-        echo -e "     \033[0;36mTelegram${NC}: https://t.me/amiqyu"
+        echo -e "     \033[0;36mTelegram${NC}: "
         echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
         exit
     fi
@@ -36,13 +36,13 @@ apt install python3-pip
 sudo apt-get install -y p7zip-full
 cd /usr/bin
 clear
-wget https://raw.githubusercontent.com/awanklod/juall/main/bot/bot.zip
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/awanklod/juall/main/bot/kyt.zip
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/bot/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 clear
@@ -71,9 +71,9 @@ read -e -p "[*] Input your Bot Token : " bottoken
 read -e -p "[*] Input Your Id Telegram :" admin
 
 cat >/usr/bin/kyt/var.txt <<EOF
-BOT_TOKEN="6661179456:AAEaAwAM-kVw6q6Rk5bvZM7z9sSU4HRiY44"
-ADMIN="5886670360"
-DOMAIN="abe.satantech.cloud"
+BOT_TOKEN="7339386828:AAGVP8M2ig8jmTw-vTh8ytKDmj4N8Aqtud4"
+ADMIN="6198984094"
+DOMAIN="safta.vvpnstore.my.id"
 EOF
 
 echo 'TEXT=$'"(cat /etc/notiftele)"'' > /etc/tele
@@ -223,13 +223,13 @@ rm -rf /usr/bin/kyt.zip
 rm -rf /usr/bin/kyt
 sleep 2
 cd /usr/bin
-wget https://raw.githubusercontent.com/awanklod/juall/main/bot/bot.zip
+wget
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/awanklod/juall/main/bot/kyt.zip
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/bot/kyt.zip
 unzip kyt.zip
 cd kyt
 pip3 install -r kyt/requirements.txt
