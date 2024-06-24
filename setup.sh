@@ -156,7 +156,7 @@ echo ""
 #git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
 #sleep 0.5
 #rm ipmini
-#elif [[ $kode == "SFVTVIP" ]]; then
+#elif [[ $kode == "AIMAN" ]]; then
 #MYIP2=$(curl -sS ipv4.icanhazip.com)
 #author2=$(cat /etc/profil)
 #rm -rf /etc/github
@@ -187,7 +187,7 @@ echo ""
 #git push -f https://${APIGIT}@github.com/${USERGIT}/izin_jual >/dev/null 2>&1
 #sleep 0.5
 #rm ipmini
-#elif [[ $kode == "SFADMIN" ]]; then
+#elif [[ $kode == "AIMAN" ]]; then
 #MYIP3=$(curl -sS ipv4.icanhazip.com)
 #author3=$(cat /etc/profil)
 #rm -rf /etc/github
@@ -324,6 +324,7 @@ cd
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ \033[1;37mPlease select a your Choice to Set Domain${BIBlue}│${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+echo -e " "
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain kamu sendiri       ${NC}"
 echo -e "${BIBlue}│  [ 2 ]  \033[1;37mDomain yang punya script  ${NC}"
@@ -336,7 +337,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m Admin SF                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS                 ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -372,18 +373,24 @@ clear
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e "${BIBlue}│ \033[1;37mPlease select a your Choice to Set Domain${BIBlue}│${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+echo -e " "
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxx.tepllovpn.eu.org          ${NC}"                                        
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpn-express.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vvpnstore.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.aivpn.my.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.aivpn.biz.id          ${NC}"
+echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain xxxx.vpnx.my.id          ${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+echo -e "${BIBlue} kata (xxxx) nanti akan diganti dengan nama kalian${NC}"
 until [[ $domain2 =~ ^[1-5]+$ ]]; do 
-read -p "   Please select numbers 1 sampai 1 : " domain2
+read -p "  Pilih Domain yg anda suka 1-5 : " domain2
 done
 fi
 if [[ $domain2 == "1" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37mContoh subdomain xxx.tepllovpn.eu.org        ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxx jadi subdomain kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│  \033[1;37m xxxx.vpn-express.my.id        ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dn1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -412,8 +419,8 @@ rm /root/subdomainx
 elif [[ $domain2 == "2" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37mContoh subdomain xxx.vpnvip.app         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxx jadi subdomain kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│  \033[1;37m  xxxx.vvpnstore.my.id         ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dn2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -442,8 +449,8 @@ rm /root/subdomainx
 elif [[ $domain2 == "3" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37mContoh subdomain xxx.slowapp.cfd        ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxx jadi subdomain kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│  \033[1;37m xxxx.aivpn.my.id       ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37m xxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dn3 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -472,8 +479,8 @@ rm /root/subdomainx
 elif [[ $domain2 == "4" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37mContoh subdomain xxx.slowapp.dev        ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxx jadi subdomain kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│  \033[1;37m xxxx.aivpn.biz.id        ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -502,8 +509,8 @@ rm /root/subdomainx
 elif [[ $domain2 == "5" ]]; then
 clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e  "${BIBlue}│  \033[1;37mContoh subdomain xxx.vipnvip.tech       ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│    \033[1;37mxxx jadi subdomain kamu               ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│  \033[1;37m  xxxx.vpnx.my.id       ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│    \033[1;37mxxxx jadi subdomain nama kamu               ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -533,7 +540,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37mDARI SAYA                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS                 ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -548,7 +555,7 @@ echo ""
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37mDARI SAYA                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS                 ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
