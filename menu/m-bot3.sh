@@ -68,7 +68,7 @@ Menu_Features
 read -p "  just Input 1-3 or xx :  "  opt
 echo -e   ""
 case $opt in
-01 | 1) clear ; wget https://raw.githubusercontent.com/AngIMAN/juall/main/bot/bot.sh && chmod +x bot.sh && ./bot.sh ;;
+01 | 1) clear ; wget https://raw.githubusercontent.com/AngIMAN/juall/main/bot/bot3.sh && chmod +x bot3.sh && ./bot3.sh ;;
 02 | 2) clear ; del-bot ;;
 03 | 3) clear ; restart-bot ;;
 *) clear ; menu ;;
