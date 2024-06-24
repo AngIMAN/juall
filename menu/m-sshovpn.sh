@@ -64,9 +64,11 @@ read -p "Username : " Login
 CLIENT_EXISTS=$(grep -w $Login /etc/xray/ssh | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
+echo -e " "
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}              ${WH}• SSH PANEL MENU •               ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC}               ${WH}• SSH PANEL MENU •               ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
+echo -e " "
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│                                                 │"
 echo -e "$COLOR1│${WH} Nama Duplikat Silahkan Buat Nama Lain.          $COLOR1│"
