@@ -57,7 +57,7 @@ CITY=$(cat /etc/xray/city)
 author=$(cat /etc/profil)
 clear
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}              ${WH}• SSH PANEL MENU •               ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLOR1}              ${WH}• SSH PANEL MENU •               ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 until [[ $Login =~ ^[a-zA-Z0-9_.-]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 read -p "Username : " Login
