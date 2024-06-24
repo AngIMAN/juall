@@ -109,57 +109,57 @@ wget -q -O /usr/bin/addtr "https://raw.githubusercontent.com/AngIMAN/juall/main/
 wget -q -O /usr/bin/addws "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/addws.sh" && chmod +x /usr/bin/addws
 
 
-wget -q -O /usr/bin/addss "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/addss.sh" && chmod +x /usr/bin/addss
+wget -q -O /usr/bin/addss "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/addss.sh" && chmod +x /usr/bin/addss
 
-wget -q -O /usr/bin/cek-ssh "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-ssh.sh" && chmod +x /usr/bin/cek-ssh
-
-
-
-wget -q -O /usr/bin/cek-ss "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-ss.sh" && chmod +x /usr/bin/cek-ss
+wget -q -O /usr/bin/cek-ssh "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-ssh.sh" && chmod +x /usr/bin/cek-ssh
 
 
 
-
-wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-tr.sh" && chmod +x /usr/bin/cek-tr
-
-wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-vless.sh" && chmod +x /usr/bin/cek-vless
-
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-ws.sh" && chmod +x /usr/bin/cek-ws
-
-wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/del-vless.sh" && chmod +x /usr/bin/del-vless
+wget -q -O /usr/bin/cek-ss "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-ss.sh" && chmod +x /usr/bin/cek-ss
 
 
 
 
-wget -q -O /usr/bin/cek-noobz "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-noobz.sh" && chmod +x /usr/bin/cek-noobz
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-tr.sh" && chmod +x /usr/bin/cek-tr
+
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-vless.sh" && chmod +x /usr/bin/cek-vless
+
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-ws.sh" && chmod +x /usr/bin/cek-ws
+
+wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/del-vless.sh" && chmod +x /usr/bin/del-vless
 
 
 
-wget -q -O /usr/bin/deltr "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/deltr.sh" && chmod +x /usr/bin/deltr
 
-wget -q -O /usr/bin/delws "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/delws.sh" && chmod +x /usr/bin/delws
-
-
-
-wget -q -O /usr/bin/delss "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/delss.sh" && chmod +x /usr/bin/delss
+wget -q -O /usr/bin/cek-noobz "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-noobz.sh" && chmod +x /usr/bin/cek-noobz
 
 
 
-wget -q -O /usr/bin/renew-ss "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/renew-ss.sh" && chmod +x /usr/bin/renew-ss
+wget -q -O /usr/bin/deltr "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/deltr.sh" && chmod +x /usr/bin/deltr
+
+wget -q -O /usr/bin/delws "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/delws.sh" && chmod +x /usr/bin/delws
 
 
-wget -q -O /usr/bin/renewtr "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/renewtr.sh" && chmod +x /usr/bin/renewtr
+
+wget -q -O /usr/bin/delss "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/delss.sh" && chmod +x /usr/bin/delss
 
 
-wget -q -O /usr/bin/renewvless "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/renewvless.sh" && chmod +x /usr/bin/renewvless
+
+wget -q -O /usr/bin/renew-ss "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/renew-ss.sh" && chmod +x /usr/bin/renew-ss
 
 
-wget -q -O /usr/bin/renewws "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/renewws.sh" && chmod +x /usr/bin/renewws
+wget -q -O /usr/bin/renewtr "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/renewtr.sh" && chmod +x /usr/bin/renewtr
 
 
-wget -q -O /usr/bin/cek-mws "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-mws.sh" && chmod +x /usr/bin/cek-mws
+wget -q -O /usr/bin/renewvless "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/renewvless.sh" && chmod +x /usr/bin/renewvless
 
-wget -q -O /usr/bin/cek-mvs "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-mvs.sh" && chmod +x /usr/bin/cek-mvs
+
+wget -q -O /usr/bin/renewws "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/renewws.sh" && chmod +x /usr/bin/renewws
+
+
+wget -q -O /usr/bin/cek-mws "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-mws.sh" && chmod +x /usr/bin/cek-mws
+
+wget -q -O /usr/bin/cek-mvs "https://raw.githubusercontent.com/AngIMAN/juall/main/bot/cek-mvs.sh" && chmod +x /usr/bin/cek-mvs
 
 
 wget -q -O /usr/bin/cek-mss "https://raw.githubusercontent.com/AngIMAN/juall/memek/bot/cek-mss.sh" && chmod +x /usr/bin/cek-mss
