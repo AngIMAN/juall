@@ -249,10 +249,10 @@ clear
 echo -e "$COLOR1╭══════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1  ${WH}Please select a Bot type below                 ${NC}"
 echo -e "$COLOR1╰══════════════════════════════════════════╯${NC}"
+echo ""
 echo -e "$COLOR1╭══════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1  [ 1 ] ${WH}Buat/Edit BOT INFO Multi Login SSH, XRAY & TRANSAKSI   ${NC}"
-echo -e "$COLOR1  [ 2 ] ${WH}Buat/Edit BOT INFO Create User & Lain Lain    ${NC}"
-echo -e ""
+echo -e "$COLOR1  [ 1 ] ${WH}Buat/Edit BOT INFO Multi Login SSH, XRAY & TRANSAKSI${NC}"
+echo -e "$COLOR1  [ 2 ] ${WH}Buat/Edit BOT INFO Create User & Lain Lain${NC}"
 echo -e "$COLOR1  [ 3 ] ${WH}Buat/Edit BOT INFO Backup Telegram    ${NC}"
 echo -e "$COLOR1╰══════════════════════════════════════════╯${NC}"
 read -p "   Please select numbers 1-3 or Any Button(Random) to exit : " bot
@@ -308,7 +308,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│ ${Green_font_prefix}               • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│$NC"
+echo -e " $COLOR1│ ${yl}               • SCRIPT BY VPN EXPRESS •               ${NC} $COLOR1│$NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1   ═════════════════════════════════════════════════════${NC}"
 echo -e " $COLOR1  $NC${WH} 🩷 OS          ${COLOR1}: ${WH}$MODEL2${NC}"
@@ -326,12 +326,11 @@ echo -e " $COLOR1  $NC${WH} ❤️ Bandwidth   ${COLOR1}: ${WH}Hari= ${WH}$today
 echo -e " $COLOR1  $NC${WH} 🩷 Masa Aktif  ${COLOR1}: ${WH}$certificate Hari [$Exp2] $sts ${NC}$COLOR1" 
 echo -e " $COLOR1   ═════════════════════════════════════════════════════${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│ ${WH}               Name  :  • $author •         $NC"
+echo -e " $COLOR1│ ${yl}               Name  :  • $author •         $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e "    $COLOR1                              ${NC}"
-echo -e "     ${WH} SSH WS : ${status_ws} ${WH} XRAY : ${status_xray} ${WH} NGINX : ${status_nginx} ${WH} DROPBEAR : ${status_beruangjatuh}$NC"
-echo -e "      ${WH} UDP CUSTOM : ${status_udp} ${WH} NOOBZVPNS : ${stat_noobz} ${WH} TROJAN-GO : ${stat_trgo} ${NC}"
-echo -e "    $COLOR1╰═══════════════════════════════════════════════════╯${NC}"
+echo -e " ${WH} SSH ${status_ws} ${WH} XRAY ${status_xray} ${WH} NGINX ${status_nginx} ${WH} DROPBEAR ${status_beruangjatuh}$NC" ${WH} UDP ${status_udp} ${WH} NOOBZ ${stat_noobz} ${WH} TROJAN ${stat_trgo} ${NC}"
+echo -e "    "
 echo -e " $COLOR1╭═════════════════════ •{${WH}LIST MENU${NC}${COLOR1}}• ═════════════════════╮${NC}"
 echo -e " $COLOR1│$NC ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}SSH-WS    ${WH}[${COLOR1}Menu${WH}] ($total_ssh) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}BOT PANEL  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
 echo -e " $COLOR1│$NC ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}VMESS     ${WH}[${COLOR1}Menu${WH}] ($vmess) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}BOT NOTIF  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"    
@@ -452,11 +451,6 @@ wget https://satantech.serv00.net/arthepat/menu/install-up.sh &> /dev/null
 chmod +x install_up.sh
 ./install_up.sh
 }
-echo -e "$COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC ${WH} ❈ Client ${NC} : ${WH}$author${NC}"
-echo -e "$COLOR1│$NC ${WH} ❈ Durasi ${NC} : ${WH}$certificate Days${NC}$COLOR1"
-echo -e "$COLOR1│$NC ${WH} ❈ Expiry ${NC} : ${WH}$Exp2 $sts ${NC}$COLOR1"
-echo -e "$COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
 case $opt in
