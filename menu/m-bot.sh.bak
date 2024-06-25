@@ -73,7 +73,7 @@ read -e -p "[*] Input Your Id Telegram :" admin
 cat >/usr/bin/kyt/var.txt <<EOF
 BOT_TOKEN="7339386828:AAGVP8M2ig8jmTw-vTh8ytKDmj4N8Aqtud4"
 ADMIN="6198984094"
-DOMAIN="safta.vvpnstore.my.id"
+DOMAIN="vvpnstore.my.id"
 EOF
 
 echo 'TEXT=$'"(cat /etc/notiftele)"'' > /etc/tele
@@ -129,13 +129,13 @@ systemctl enable kyt &> /dev/null
 systemctl start kyt &> /dev/null
 systemctl restart kyt &> /dev/null
 
-wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/awanklod/juall/main/trgo/addtrgo.sh" && chmod +x /usr/bin/addtrgo
+wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/AngIMAN/juall/main/trgo/addtrgo.sh" && chmod +x /usr/bin/addtrgo
 
-wget -q -O /usr/bin/deltrgo "https://raw.githubusercontent.com/awanklod/juall/main/trgo/deltrgo.sh" && chmod +x /usr/bin/deltrgo
+wget -q -O /usr/bin/deltrgo "https://raw.githubusercontent.com/AngIMAN/juall/main/trgo/deltrgo.sh" && chmod +x /usr/bin/deltrgo
 
-wget -q -O /usr/bin/cektrgo "https://raw.githubusercontent.com/awanklod/juall/main/trgo/cektrgo.sh" && chmod +x /usr/bin/cektrgo
+wget -q -O /usr/bin/cektrgo "https://raw.githubusercontent.com/AngIMAN/juall/main/trgo/cektrgo.sh" && chmod +x /usr/bin/cektrgo
 
-wget -q -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/awanklod/juall/main/trgo/renewtrgo.sh" && chmod +x /usr/bin/renewtrgo
+wget -q -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/AngIMAN/juall/main/trgo/renewtrgo.sh" && chmod +x /usr/bin/renewtrgo
 
 echo "Done"
 echo " Installations complete, type /menu on your bot"
