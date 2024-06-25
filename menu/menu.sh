@@ -329,7 +329,7 @@ echo -e " $COLOR1╭════════════════════
 echo -e " $COLOR1│ ${yl}               Name  :  • $author •         $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e "    $COLOR1                              ${NC}"
-echo -e " ${WH} SSH ${status_ws} ${WH} XRAY ${status_xray} ${WH} NGINX ${status_nginx} ${WH} DROPBEAR ${status_beruangjatuh}$NC" ${WH} UDP ${status_udp} ${WH} NOOBZ ${stat_noobz} ${WH} TROJAN ${stat_trgo} ${NC}"
+echo -e " ${WH} SSH ${status_ws} ${WH} XRAY ${status_xray} ${WH} NGINX ${status_nginx} ${WH} DROPBEAR ${status_beruangjatuh} ${WH} UDP ${status_udp} ${WH} NOOBZ ${stat_noobz} ${WH} TROJAN ${stat_trgo} ${NC}"
 echo -e "    "
 echo -e " $COLOR1╭═════════════════════ •{${WH}LIST MENU${NC}${COLOR1}}• ═════════════════════╮${NC}"
 echo -e " $COLOR1│$NC ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}SSH-WS    ${WH}[${COLOR1}Menu${WH}] ($total_ssh) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}BOT PANEL  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
