@@ -333,7 +333,7 @@ echo -e " ${WH}SSH-WS : ${status_ws}${WH}  XRAY : ${status_xray}${WH}${WH} NGINX
 echo -e "    "
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│$NC        ${COLOR1}MENU AKUN${NC}    ${COLOR1}STATUS ${NC}  ${COLOR1}TOTAL PREMIUM ${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC}${COLOR1}• ${WH}SSH         ${COLOR1}│${NC}   ${status_ws}${COLOR1}   ${COLOR1}│${NC}  $total_ssh Accounts ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}01${COLOR1}]${NC}${COLOR1}• ${WH}SSH         ${COLOR1}│${NC}   ${status_ws}${COLOR1}   ${COLOR1}│${NC}  $total_ssh Accounts ${NC}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC}${COLOR1}• ${WH}VMESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC}  $vmess Accounts ${NC}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}03${COLOR1}]${NC}${COLOR1}• ${WH}VLESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC}  $vless Accounts ${NC}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}04${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN      ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC}  $trtls Accounts ${NC}"
