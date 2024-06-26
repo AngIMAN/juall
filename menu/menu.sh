@@ -333,7 +333,7 @@ echo -e "${WH} SSH : ${status_ws}${WH}  XRAY : ${status_xray}${WH}  NGINX : ${st
 echo -e "    "
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│$NC ${WH}       [${COLOR1}MENU AKUN${WH}]${NC}      │ [${COLOR1}STATUS${WH}]${NC}
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}01${COLOR1}]${NC} ${COLOR1}• ${WH}SSH-WS    ${WH}│${COLOR1}${status_ws}${WH}] ($total_ssh) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}BOT PA${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}01${COLOR1}]${NC} ${COLOR1}• ${WH}SSH-WS    ${WH}│${COLOR1}${status_ws}${WH}] ($total_ssh) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} "
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC} ${COLOR1}• ${WH}VMESS     ${WH}│${COLOR1}${status_xray}${WH}] ($vmess) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}BOT NO${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"    
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}03${COLOR1}]${NC} ${COLOR1}• ${WH}VLESS     ${WH}│${COLOR1}${status_xray}${WH}] ($vless) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UPDATE${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"   
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}04${COLOR1}]${NC} ${COLOR1}• ${WH}TROJAN    ${WH}│${COLOR1}${status_xray}${WH}] ($trtls) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}SYSTEM${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}" 
