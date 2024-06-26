@@ -329,17 +329,21 @@ echo -e " $COLOR1╭════════════════════
 echo -e " $COLOR1│ ${yl}               Name  :  • $author •         $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " "
-echo -e "${WH} SSH : ${status_ws}${WH}  XRAY : ${status_xray}${WH}  NGINX : ${status_nginx}${WH}  DROPBEAR : ${status_beruangjatuh}${WH}  UDP : ${status_udp}${WH}  NOOBZ : ${stat_noobz}${WH}  TROJAN : ${stat_trgo}${NC}"
+echo -e "        ${WH}  NGINX : ${status_nginx}${WH}  DROPBEAR : ${status_beruangjatuh}${WH}  UDP : ${status_udp}"
 echo -e "    "
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC        ${COLOR1}MENU AKUN${NC}  │ [${COLOR1}STATUS${WH}]${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}01${COLOR1}]${NC} ${COLOR1}• ${WH}SSH-WS     ${COLOR1}│${NC} ${status_ws} ${COLOR1} $total_ssh Akun ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} "
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC} ${COLOR1}• ${WH}VMESS      ${COLOR1}│${NC} ${status_xray}${COLOR1} $vmess Akun ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}BOT NO${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"    
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}03${COLOR1}]${NC} ${COLOR1}• ${WH}VLESS      ${COLOR1}│${NC} ${status_xray}${COLOR1} $vless Akun ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UPDATE${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"   
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}04${COLOR1}]${NC} ${COLOR1}• ${WH}TROJAN     ${COLOR1}│${NC} ${status_xray}${COLOR1} $trtls Akun ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}10${WH}]${NC} ${COLOR1}• ${WH}SYSTEM${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}" 
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}05${COLOR1}]${NC} ${COLOR1}• ${WH}NOOBZVPNS  ${COLOR1}│${NC} ${stat_noobz}${COLOR1} $jumlah_noobz Akun ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}11${WH}]${NC} ${COLOR1}• ${WH}BACKUP${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}" 
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}06${COLOR1}]${NC} ${COLOR1}• ${WH}TROJAN-GO  ${COLOR1}│${NC} ${stat_trgo}${COLOR1} $jumlah_trgo Akun ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}12${WH}]${NC} ${COLOR1}• ${WH}REBOOT${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}" 
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}22${COLOR1}]${NC} ${COLOR1}• ${WH}RUNNING    ${COLOR1}│${NC} ${status_ws}${COLOR1}  ${NC}   $COLOR1│${NC}  ${WH}[${COLOR1}23${WH}]${NC} ${COLOR1}• ${WH}RESTAR${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
+echo -e " $COLOR1│$NC        ${COLOR1}MENU AKUN${NC}    ${COLOR1}STATUS ${NC}   ${COLOR1}TOTAL PREMIUM ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC} ${COLOR1}• ${WH}VMESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC} $vmess Accounts ${NC}$COLOR1│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}03${COLOR1}]${NC} ${COLOR1}• ${WH}VLESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC} $vless Accounts ${NC}$COLOR1│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}04${COLOR1}]${NC} ${COLOR1}• ${WH}TROJAN      ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC} $trtls Accounts ${NC}$COLOR1│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}05${COLOR1}]${NC} ${COLOR1}• ${WH}NOOBZVPNS   ${COLOR1}│${NC}   ${stat_noobz}${COLOR1}   ${COLOR1}│${NC} $jumlah_noobz Accounts ${NC}$COLOR1│${NC}" 
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}06${COLOR1}]${NC} ${COLOR1}• ${WH}TROJAN-GO   ${COLOR1}│${NC}   ${stat_trgo}${COLOR1}   ${COLOR1}│${NC} $jumlah_trgo Accounts ${NC}$COLOR1│${NC}"
+echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC} ${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC} ${COLOR1}• ${WH}BOT PANEL   ${COLOR1}│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}08${COLOR1}]${NC} ${COLOR1}• ${WH}MENU BACKUP ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC} ${COLOR1}• ${WH}BOT NOTIF   ${COLOR1}│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}09${COLOR1}]${NC} ${COLOR1}• ${WH}RESTART     ${COLOR1}│${NC} ${COLOR1}[${WH}13${COLOR1}]${NC} ${COLOR1}• ${WH}            ${COLOR1}│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC} ${COLOR1}• ${WH}RUNNING     ${COLOR1}│${NC} ${COLOR1}[${WH}14${COLOR1}]${NC} ${COLOR1}• ${WH}REBOOT      ${COLOR1}│${NC}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 if [ "$Isadmin" = "ON" ]; then 
 echo -e "$COLOR1╭════════════════════ • ${WH}PANEL ADMIN VIP${NC}${COLOR1} • ════════════════╮${NC}"
@@ -461,14 +465,14 @@ case $opt in
 04 | 4) clear ; m-trojan ;;
 05 | 5) clear ; m-noobz ;;
 06 | 6) clear ; m-trgo ;;
-07 | 7) clear ; m-bot  ;;
-08 | 8) clear ; m-bot2 ;;
-09 | 9) clear ; m-update ;;
-10 | 10) clear ; m-system ;;
-11 | 11) clear ; m-backup;;
-12 | 12) clear ; reboot ;;
+07 | 7) clear ; m-system ;;
+08 | 8) clear ; m-backup ;;
+09 | 9) clear ; restartservice ;;
+10 | 10) clear ; running ;;
+11 | 11) clear ; m-bot ;;
+12 | 12) clear ;  m-bot2 ;;
 13 | 13) clear ; $ressee ;;
-14 | 14) clear ; key ;;
+14 | 14) clear ; key ;; reboot ;;
 22 | 22) clear ; running;;
 23 | 23) clear ; restartservice ;;
 89 | 89) clear ; bannner ;;
