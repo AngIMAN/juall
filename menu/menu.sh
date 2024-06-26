@@ -332,18 +332,19 @@ echo -e " "
 echo -e "        ${WH}  NGINX : ${status_nginx}${WH}  DROPBEAR : ${status_beruangjatuh}${WH}  UDP : ${status_udp}"
 echo -e "    "
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC        ${COLOR1}MENU AKUN${NC}    ${COLOR1}STATUS ${NC}   ${COLOR1}TOTAL PREMIUM ${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC} ${COLOR1}• ${WH}VMESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC} $vmess Accounts ${NC}$COLOR1│${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}03${COLOR1}]${NC} ${COLOR1}• ${WH}VLESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC} $vless Accounts ${NC}$COLOR1│${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}04${COLOR1}]${NC} ${COLOR1}• ${WH}TROJAN      ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC} $trtls Accounts ${NC}$COLOR1│${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}05${COLOR1}]${NC} ${COLOR1}• ${WH}NOOBZVPNS   ${COLOR1}│${NC}   ${stat_noobz}${COLOR1}   ${COLOR1}│${NC} $jumlah_noobz Accounts ${NC}$COLOR1│${NC}" 
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}06${COLOR1}]${NC} ${COLOR1}• ${WH}TROJAN-GO   ${COLOR1}│${NC}   ${stat_trgo}${COLOR1}   ${COLOR1}│${NC} $jumlah_trgo Accounts ${NC}$COLOR1│${NC}"
+echo -e " $COLOR1│$NC        ${COLOR1}MENU AKUN${NC}    ${COLOR1}STATUS ${NC}  ${COLOR1}TOTAL PREMIUM ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC}${COLOR1}• ${WH}SSH         ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC}  $vmess Accounts ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC}${COLOR1}• ${WH}VMESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC}  $vmess Accounts ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}03${COLOR1}]${NC}${COLOR1}• ${WH}VLESS       ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC}  $vless Accounts ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}04${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN      ${COLOR1}│${NC}   ${status_xray}${COLOR1}   ${COLOR1}│${NC}  $trtls Accounts ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}05${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZVPNS   ${COLOR1}│${NC}   ${stat_noobz}${COLOR1}   ${COLOR1}│${NC}  $jumlah_noobz Accounts ${NC}" 
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}06${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO   ${COLOR1}│${NC}   ${stat_trgo}${COLOR1}   ${COLOR1}│${NC}  $jumlah_trgo Accounts ${NC}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC} ${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC} ${COLOR1}• ${WH}BOT PANEL   ${COLOR1}│${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}08${COLOR1}]${NC} ${COLOR1}• ${WH}MENU BACKUP ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC} ${COLOR1}• ${WH}BOT NOTIF   ${COLOR1}│${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}09${COLOR1}]${NC} ${COLOR1}• ${WH}RESTART     ${COLOR1}│${NC} ${COLOR1}[${WH}13${COLOR1}]${NC} ${COLOR1}• ${WH}            ${COLOR1}│${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC} ${COLOR1}• ${WH}RUNNING     ${COLOR1}│${NC} ${COLOR1}[${WH}14${COLOR1}]${NC} ${COLOR1}• ${WH}REBOOT      ${COLOR1}│${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL  ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}08${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF  ${COLOR1}│${NC} ${COLOR1}[${WH}16${COLOR1}]${NC}${COLOR1}• ${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}09${COLOR1}]${NC}${COLOR1}• ${WH}RESTART     ${COLOR1}│${NC} ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT     ${COLOR1}│${NC} ${COLOR1}[${WH}17${COLOR1}]${NC}${COLOR1}• ${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING     ${COLOR1}│${NC} ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1}• ${WH}UPDATE     ${COLOR1}│${NC} ${COLOR1}[${WH}18${COLOR1}]${NC}${COLOR1}• ${WH}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 if [ "$Isadmin" = "ON" ]; then 
 echo -e "$COLOR1╭════════════════════ • ${WH}PANEL ADMIN VIP${NC}${COLOR1} • ════════════════╮${NC}"
@@ -457,7 +458,7 @@ chmod +x install_up.sh
 ./install_up.sh
 }
 echo -e ""
-echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
+echo -ne " ${WH}Select menu 1-18 ${COLOR1}: ${WH}"; read opt
 case $opt in
 01 | 1) clear ; m-sshovpn ;;
 02 | 2) clear ; m-vmess ;;
@@ -471,8 +472,8 @@ case $opt in
 10 | 10) clear ; running ;;
 11 | 11) clear ; m-bot ;;
 12 | 12) clear ; m-bot2 ;;
-13 | 13) clear ; passwd ;;
-14 | 14) clear ; reboot ;;
+13 | 13) clear ; reboot ;;
+14 | 14) clear ; m-update ;;
 22 | 22) clear ; running ;;
 23 | 23) clear ; restartservice ;;
 89 | 89) clear ; bannner ;;
