@@ -138,13 +138,13 @@ fi
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
-status_ws="${Green_font_prefix}🟢${NC}"
+status_ws="${Green_font_prefix}ON${NC}"
 else
 status_ws="${RED}OFF${NC}"
 fi
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-status_nginx="${Green_font_prefix}🟢${NC}"
+status_nginx="${Green_font_prefix}ON${NC}"
 else
 status_nginx="${Red_font_prefix}OFF${NC}"
 systemctl start nginx
@@ -328,8 +328,7 @@ echo -e " $COLOR1   ════════════════════
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
 echo -e " $COLOR1│ ${yl}               Name  :  • $author •         $NC"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
-echo -e "    $COLOR1                              ${NC}"
-echo -e "${WH} SSH ${status_ws}${WH} XRAY ${status_xray}${WH} NGINX ${status_nginx}${WH} DROPBEAR ${status_beruangjatuh}${WH} UDP ${status_udp}${WH} NOOBZ ${stat_noobz}${WH} TROJAN ${stat_trgo}${NC}"
+echo -e "${WH} SSH : ${status_ws}${WH}  XRAY : ${status_xray}${WH}  NGINX : ${status_nginx}${WH}  DROPBEAR : ${status_beruangjatuh}${WH}  UDP : ${status_udp}${WH}  NOOBZ : ${stat_noobz}${WH}  TROJAN : ${stat_trgo}${NC}"
 echo -e "    "
 echo -e " $COLOR1╭═════════════════════ •{${WH}LIST MENU${NC}${COLOR1}}• ═════════════════════╮${NC}"
 echo -e " $COLOR1│$NC ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}SSH-WS    ${WH}[${COLOR1}Menu${WH}] ($total_ssh) ${NC}$COLOR1│${NC}  ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}BOT PANEL  ${WH}[${COLOR1}Menu${WH}] $COLOR1│${NC}"
