@@ -138,13 +138,13 @@ fi
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[4$below" && Font_color_suffix="\033[0m"
 ssh_ws=$( systemctl status ws-stunnel | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $ssh_ws == "running" ]]; then
-status_ws="${Green_font_prefix}ON${NC}"
+status_ws="${Green_font_prefix}🟢${NC}"
 else
 status_ws="${RED}OFF${NC}"
 fi
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-status_nginx="${Green_font_prefix}ON${NC}"
+status_nginx="${Green_font_prefix}🟢${NC}"
 else
 status_nginx="${Red_font_prefix}OFF${NC}"
 systemctl start nginx
