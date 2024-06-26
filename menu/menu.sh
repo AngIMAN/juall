@@ -470,10 +470,10 @@ case $opt in
 09 | 9) clear ; restartservice ;;
 10 | 10) clear ; running ;;
 11 | 11) clear ; m-bot ;;
-12 | 12) clear ;  m-bot2 ;;
-13 | 13) clear ; $ressee ;;
-14 | 14) clear ; key ;; reboot ;;
-22 | 22) clear ; running;;
+12 | 12) clear ; m-bot2 ;;
+13 | 13) clear ; passwd ;;
+14 | 14) clear ; reboot ;;
+22 | 22) clear ; running ;;
 23 | 23) clear ; restartservice ;;
 89 | 89) clear ; bannner ;;
 #88 | 88) clear ; new ;;
