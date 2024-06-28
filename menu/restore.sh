@@ -61,6 +61,4 @@ cp -r vmess /etc/ &> /dev/null
 cp -r vless /etc/ &> /dev/null
 cp -r trojan /etc/ &> /dev/null
 cp -r issue /etc/issue.net &> /dev/null
-rm -rf /root/backup
-rm -f backup.zip
 echo ""
