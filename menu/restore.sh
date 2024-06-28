@@ -28,7 +28,7 @@ TEXT="
 <code>◇━━━━━━━━━━━━━━◇</code>
 <code>Restore Vps Done</code>
 <code>◇━━━━━━━━━━━━━━◇</code>
-<code>BY BOT : @Kytxz</code>
+<code>BY BOT : </code>
 "
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
@@ -43,7 +43,6 @@ unzip backup.zip
 rm -f backup.zip
 sleep 1
 echo Start Restore
-cd /root/backup
 cp -r passwd /etc/ &> /dev/null
 cp -r group /etc/ &> /dev/null
 cp -r shadow /etc/ &> /dev/null
