@@ -79,7 +79,6 @@ cd
 rm -rf *
 sleep 0.5
 read -n 1 -s -r -p "Press any key to back on menu"
-menue/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
 export COLBG1="$(cat /etc/rmbl/theme/$colornow | grep -w "BG" | cut -d: -f2|sed 's/ //g')"
 WH='\033[1;37m'
 ipsaya=$(wget -qO- ipv4.icanhazip.com)
