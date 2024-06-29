@@ -35,8 +35,3 @@ cp -r kyt /var/lib/
 cp -r xray /etc/
 cp -r html /var/www/
 cp crontab /etc/
-
-notif_restore
-rm -rf /root/backup
-rm -f backup.zip
-echo ""
