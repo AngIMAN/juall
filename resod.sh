@@ -15,7 +15,7 @@ export TIME="10"
 export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
-}
+
 # ==========================================
 # Getting
 clear
