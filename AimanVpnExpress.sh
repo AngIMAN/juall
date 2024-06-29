@@ -308,19 +308,19 @@ wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/rmbl.sh && chm
 clear
 }
 res2() {
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/vpnexpress2.sh && chmod +x vpnexpress2.sh && ./vpnexpress2.sh
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/vpnexpress2.sh && chmod +x vpnexpress2.sh && ./vpnexpress2.sh
 clear
 }
 res3() {
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/vpnexpress3.sh && chmod +x vpnexpress3.sh && ./vpnexpress3.sh
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/vpnexpress3.sh && chmod +x vpnexpress3.sh && ./vpnexpress3.sh
 clear
 }
 res4() {
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/vpnexpress4.sh && chmod +x vpnexpress4.sh && ./vpnexpress4.sh
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/vpnexpress4.sh && chmod +x vpnexpress4.sh && ./vpnexpress4.sh
 clear
 }
 res5() {
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/vpnexpress5.sh && chmod +x vpnexpress5.sh && ./vpnexpress5.sh
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/vpnexpress5.sh && chmod +x vpnexpress5.sh && ./vpnexpress5.sh
 clear
 }
 clear
