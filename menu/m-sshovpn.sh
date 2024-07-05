@@ -304,6 +304,8 @@ read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function trial(){
+}
+function renew(){
 clear
 domen=`cat /etc/xray/domain`
 sldomain=`cat /etc/xray/dns`
