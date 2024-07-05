@@ -323,7 +323,7 @@ echo -e "$COLOR1│${NC} ${COLBG1}           ${WH}• TRIAL SSH Account •     
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e ""
 until [[ $timer =~ ^[0-9]+$ ]]; do
-read -p "Expired (Minutes): " timer
+read -p "Expired (Minutes): " $timer
 done
 Login=Trial-`</dev/urandom tr -dc X-Z0-9 | head -c4`
 hari=0
