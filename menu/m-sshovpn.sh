@@ -298,14 +298,12 @@ echo -e "$COLOR1 ◇━━━━ PAYLOAD ━━━━◇ ${NC}" | tee -a /etc/xr
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ${NC} Terimakasih Sudah Order Di " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━${WH}• $author • $NC"━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━${WH}• $author • $NC"━━◇ | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
 function trial(){
-}
-function renew(){
 clear
 domen=`cat /etc/xray/domain`
 sldomain=`cat /etc/xray/dns`
