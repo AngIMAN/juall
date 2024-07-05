@@ -266,9 +266,8 @@ curl -s --max-time $TIMES -d "chat_id=$CHATID2&disable_web_page_preview=1&text=$
 clear
 echo -e " "
 echo -e " "
-echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ${NC} ${WH}• SSH Premium Account  • " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━━ ACCOUNT SSH ━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}Masa Aktif ${COLOR1}: ${WH}$masaaktif" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
@@ -277,11 +276,12 @@ echo -e "$COLOR1 $NC ${WH}ISP      ${COLOR1}: ${WH}$ISP" | tee -a /etc/xray/sshx
 echo -e "$COLOR1 $NC ${WH}City     ${COLOR1}: ${WH}$CITY" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}Host     ${COLOR1}: ${WH}$domen" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}Limit IP ${COLOR1}: ${WH}${iplim} User" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━━━━━PORT━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 $NC ${WH}SSH : ${WH}$domen:80@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━━━━ PORT ━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}OpenSSH  ${COLOR1}: ${WH}22" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}Dropbear ${COLOR1}: ${WH}109, 143" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SSH-WS   ${COLOR1}: ${WH}80, 2860, 7000 s/d 9000, etc" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SSH-SSL-WS ${COLOR1}: ${WH}443" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 $NC ${WH}SSH WS   ${COLOR1}: ${WH}80, 2860, 7000 s/d 9000, etc" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 $NC ${WH}SSL WS ${COLOR1}: ${WH}443" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}SSL/TLS  ${COLOR1}: ${WH}8443,8880" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}Ovpn Ws  ${COLOR1}: ${WH}2086" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}TCP ${COLOR1}: ${WH}1194" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
@@ -291,17 +291,15 @@ echo -e "$COLOR1 $NC ${WH}UDPGW    ${COLOR1}: ${WH}7100-7300" | tee -a /etc/xray
 echo -e "$COLOR1 $NC ${WH}SLOWDNS${COLOR1}: ${WH}80,443,53" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}PUB KEY    ${COLOR1}: ${WH}$slkey" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━━━━ SSH ━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}UDP${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}SSL: ${WH}$domen:443@$Login:$Pass"| tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 $NC ${WH}WS : ${WH}$domen:80@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━━━━PAYLOAD ━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━━━ PAYLOAD ━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━━━━LINK AKUN━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC}  ${WH}http://$domen:89/ssh-$Login.txt${NC}$COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC}    ${WH}• $author •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ${NC} Terimakasih Sudah Order Di ${WH}• $author • $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -1204,8 +1202,8 @@ echo -e " $COLOR1╭════════════════════
 echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}01${WH}]${NC} ${COLOR1}• ${WH}ADD AKUN${NC}        ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}CEK USER ONLINE${NC}    $COLOR1│ $NC"
 echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}02${WH}]${NC} ${COLOR1}• ${WH}TRIAL AKUN${NC}      ${WH}[${COLOR1}06${WH}]${NC} ${COLOR1}• ${WH}CEK USER CONFIG${NC}    $COLOR1│ $NC"
 echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}03${WH}]${NC} ${COLOR1}• ${WH}RENEW AKUN${NC}      ${WH}[${COLOR1}07${WH}]${NC} ${COLOR1}• ${WH}CHANGE IP LIMIT${NC}    $COLOR1│ $NC"
-echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}DELETE AKUN${NC}     ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}SETTING LOCK LOGIN${NC} $COLOR1│ $NC"
-echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}         ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UNLOCK LOGIN${NC}      $COLOR1 │$NC"
+echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}04${WH}]${NC} ${COLOR1}• ${WH}DELETE AKUN${NC}     ${WH}[${COLOR1}08${WH}]${NC} ${COLOR1}• ${WH}LOCK SSH LOGIN${NC}     $COLOR1│ $NC"
+echo -e " $COLOR1│ $NC  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}         ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UNLOCK SSH LOGIN${NC}  $COLOR1 │$NC"
 echo -e " $COLOR1╰════════════════════════════════════════════════════╯${NC}"
 echo -e " "
 echo -e " $COLOR1╭═════════════════════════ ${WH}BY${NC} ${COLOR1}═══════════════════════╮ ${NC}"
