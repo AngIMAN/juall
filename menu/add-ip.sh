@@ -473,8 +473,4 @@ TEXT="
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 5Menit Untuk Server KeRefresh</i>
 <b><i>Terima Kasih Sudah Menggunakan Credits By VPN EXPRESS</i></b>
-"&reply_markup={"inline_keyboard":[[{"text":"CHANNEL","url":"https://t.me/AimanVpnExpress"},{"text":"ORDER AUTOSCRIPT","
-clear
-
-
 
