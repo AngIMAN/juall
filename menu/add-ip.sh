@@ -287,7 +287,7 @@ TEXT="
 <b>DURASI SCRIPT : ${certificate} Days</b>
 <b>Succes Create this IP</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
-<i>Tunggu 5Menit Untuk Server KeRefresh</i>
+<i>Tunggu 5 Menit Untuk Server KeRefresh</i>
 <b><i>Terima Kasih Sudah Menggunakan Credits By VPN EXPRESS</i></b>
 "
 
@@ -473,3 +473,4 @@ TEXT="
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 5 Menit Untuk Server KeRefresh</i>
 <b><i>Terima Kasih Sudah Menggunakan Credits By VPN EXPRESS</i></b>
+"'&reply_markup={"inline_keyboard":[[{"text":"CHANNEL","url":"https://t.me/satanofficiall"},{"text":"ORDER AUTOSCRIPT","
