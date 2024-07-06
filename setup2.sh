@@ -308,15 +308,19 @@ wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/rmbl.sh && chm
 clear
 }
 res2() {
-wget https://raw.githubusercontent.com/RMBL-VPN/v1/main/install/r1.sh && chmod +x cr1.sh && ./per1.sh
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/aiman2.sh && chmod +x aiman2.sh && ./aiman2.sh
 clear
 }
 res3() {
-wget https://raw.githubusercontent.com/RMBL-VPN/v1/main/install/c2.sh && chmod +x c2.sh && ./cr2.sh
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/aiman2.sh && chmod +x aiman3.sh && ./aiman3.sh
 clear
 }
 res4() {
-wget https://raw.githubusercontent.com/RMBL-VPN/v1/main/install/r3.sh && chmod +x r3.sh && ./r3.sh
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/aiman2.sh && chmod +x aiman4.sh && ./aiman4.sh
+clear
+}
+res5() {
+wget https://raw.githubusercontent.com/AngIMAN/juall/main/aiman2.sh && chmod +x aiman5.sh && ./aiman5.sh
 clear
 }
 clear
@@ -341,7 +345,7 @@ echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS                 ${B
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
-read -rp "Masukan domain kamu Disini : " -e dnss
+read -rp "Ketik Domain kamu Disini : " -e dnss
 done
 rm -rf /etc/xray
 rm -rf /etc/v2ray
