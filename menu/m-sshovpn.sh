@@ -79,7 +79,6 @@ echo -e "$COLOR1╰════════════════════�
 read -n 1 -s -r -p "Press any key to back"
 usernew
 fi
-done
 read -p "   Password   : " Pass
 done
 until [[ $iplim =~ ^[0-9]+$ ]]; do
