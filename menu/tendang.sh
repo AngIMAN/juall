@@ -611,7 +611,7 @@ ssssh=$(cat /etc/xray/sshx/notif)
 fi
 if [ $sship = $ssssh ]; then
 if [ $type = "delete" ]; then
-TEXT2="
+TEXT="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b> ⚠️ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
