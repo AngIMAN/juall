@@ -475,7 +475,6 @@ echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on m-ssws"
 m-ssws
 }
-
 function renew-ssws(){
 TIMES="10"
 CHATID=$(cat /etc/per/id)
