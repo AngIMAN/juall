@@ -586,8 +586,6 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
     echo ""
     read -n 1 -s -r -p "Press any key to back on m-ssws"
     m-ssws
-}
-
 function cek-sshws(){
 TIMES="10"
 CHATID=$(cat /etc/per/id)
@@ -660,8 +658,6 @@ echo -e "$COLOR1╰════════════════════�
 echo "$COLOR1 ${NC} "
 read -n 1 -s -r -p "   Press any key to back on m-ssws"
 m-ssws
-}
-
 function list-vmess(){
 clear
 tls="$(cat ~/log-install.txt | grep -w "Shadowsocks WS TLS" | cut -d: -f2|sed 's/ //g')"
@@ -786,7 +782,6 @@ echo "$COLOR1 ${NC} "
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on m-ssws"
 m-ssws
-}
 clear
 author=$(cat /etc/profil)
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
