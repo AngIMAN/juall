@@ -52,7 +52,7 @@ echo -e "$COLOR1╭════════════════════�
 echo -e "$COLOR1│${NC} ${COLBG1}            ${WH}• Add Vmess Account •              ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 echo -e ""
-read -rp "Username   : " -e user
+read -rp "  Username    : " -e user
 CLIENT_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
@@ -70,14 +70,14 @@ fi
 done
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 until [[ $iplim =~ ^[0-9]+$ ]]; do
-read -p "Max User    : " iplim
+read -p "  Limit User  : " iplim
 done
 until [[ $Quota =~ ^[0-9]+$ ]]; do
-read -p "Limit Quota : " Quota
+read -p "  Limit Quota : " Quota
 done
 uuid=$(cat /proc/sys/kernel/random/uuid)
 until [[ $masaaktif =~ ^[0-9]+$ ]]; do
-read -p "Masa Aktif  : " masaaktif
+read -p "  Masa Aktif  : " masaaktif
 done
 if [ ! -e /etc/vmess ]; then
 mkdir -p /etc/vmess
