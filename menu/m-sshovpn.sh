@@ -62,7 +62,7 @@ echo -e "$COLOR1╰════════════════════�
 echo -e " "
 echo -e " "
 until [[ $Login =~ ^[a-zA-Z0-9_.-]+$ && ${CLIENT_EXISTS} == '0' ]]; do
-read -p "   Username  : " Login
+read -p "   Username   : " Login
 CLIENT_EXISTS=$(grep -w $Login /etc/xray/ssh | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
@@ -80,12 +80,13 @@ read -n 1 -s -r -p "Press any key to back"
 usernew
 fi
 done
-read -p "   Password  : " Pass
-until [[ $masaaktif =~ ^[0-9]+$ ]]; do
-read -p "   Masa Aktif: " masaaktif
+read -p "   Password   : " Pass
 done
 until [[ $iplim =~ ^[0-9]+$ ]]; do
-read -p "   Max User  : " iplim
+read -p "   Limit User : " iplim
+done
+until [[ $masaaktif =~ ^[0-9]+$ ]]; do
+read -p "   Masa Aktif : " masaaktif
 done
 if [ ! -e /etc/xray/sshx ]; then
 mkdir -p /etc/xray/sshx
@@ -266,39 +267,39 @@ curl -s --max-time $TIMES -d "chat_id=$CHATID2&disable_web_page_preview=1&text=$
 clear
 echo -e " "
 echo -e " "
-echo -e "$COLOR1 ${NC} ${WH}• SSH Premium Account  • " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1${NC} ${WH}• SSH Premium Account  • " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━ ACCOUNT SSH ━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Username   ${COLOR1}: ${WH}$Login"  | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Password   ${COLOR1}: ${WH}$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Masa Aktif ${COLOR1}: ${WH}$masaaktif" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}ISP      ${COLOR1}: ${WH}$ISP" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}City     ${COLOR1}: ${WH}$CITY" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Host     ${COLOR1}: ${WH}$domen" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Limit IP ${COLOR1}: ${WH}${iplim} User" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SSH : ${WH}$domen:80@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Username ${COLOR1}: ${WH}$Login"  | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Password ${COLOR1}: ${WH}$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}ISP  ${COLOR1}: ${WH}$ISP" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}City ${COLOR1}: ${WH}$CITY" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Host ${COLOR1}: ${WH}$domen" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Limit IP ${COLOR1}: ${WH}${iplim} User" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}SSH : ${WH}$domen:80@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Masa Aktif ${COLOR1}: ${WH}$masaaktif" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Expired On ${COLOR1}: ${WH}$exp"  | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━ PORT ━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}OpenSSH  ${COLOR1}: ${WH}22" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Dropbear ${COLOR1}: ${WH}109, 143" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SSH WS   ${COLOR1}: ${WH}80, 2086, 7000 s/d 9000, etc" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SSH SSL  ${COLOR1}: ${WH}443, 990" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SSL/TLS  ${COLOR1}: ${WH}443,8880" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}Ovpn Ws  ${COLOR1}: ${WH}2086" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}TCP ${COLOR1}: ${WH}1194" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}UDP ${COLOR1}: ${WH}2200,1-65535" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}UDPGW    ${COLOR1}: ${WH}7100-7300" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SLOWDNS${COLOR1}: ${WH}80,443,53" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}PUB KEY    ${COLOR1}: ${WH}$slkey" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}OpenSSH  ${COLOR1}: ${WH}22" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Dropbear ${COLOR1}: ${WH}109, 143" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}SSH WS   ${COLOR1}: ${WH}80, 2086, 7000 s/d 9000, etc" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}SSH SSL  ${COLOR1}: ${WH}443, 990" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}SSL/TLS  ${COLOR1}: ${WH}443,8880" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}Ovpn Ws  ${COLOR1}: ${WH}2086" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}TCP ${COLOR1}: ${WH}1194" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}UDP ${COLOR1}: ${WH}2200,1-65535" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}UDPGW ${COLOR1}: ${WH}7100-7300" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}SLOWDNS${COLOR1}: ${WH}80,443,53" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}NAMESERVER ${COLOR1}: ${WH}$sldomain" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}PUB KEY    ${COLOR1}: ${WH}$slkey" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━ SSH ━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}UDP${COLOR1}: ${WH}$domen:1-65535@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}SSL: ${WH}$domen:443@$Login:$Pass"| tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 $NC ${WH}WS : ${WH}$domen:80@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}WS : ${WH}$domen:80@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}SSL: ${WH}$domen:443@$Login:$Pass"| tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1$NC${WH}UDP: ${WH}$domen:1-65535@$Login:$Pass" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━ PAYLOAD ━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1${NC}${WH}GET / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: ws[crlf][crlf]${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC} Terimakasih Sudah Order Di " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ◇━━${WH}• $author • $NC"━━◇ | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1${NC}Terimakasih Sudah Order Di " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ◇━━━${WH}• $author • $NC"━━━◇ | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
@@ -393,23 +394,23 @@ Trial SSH Premium Account
 ◇━━━━━━━━━━━━━━━━━◇
 Username        :  <code>$Login</code>
 Password        :  <code>$Pass</code>
-Expired On       :  $timer Minutes
+Expired On      :  $timer Minutes
 ◇━━━━━━━━━━━━━━━━━◇
-ISP              :  $ISP
-CITY             :  $CITY
-Host             :  <code>$domen</code>
-Login Limit      :  ${iplim} IP
+ISP             :  $ISP
+CITY            :  $CITY
+Host            :  <code>$domen</code>
+Login Limit     :  ${iplim} IP
 Port OpenSSH    :  22
-Port Dropbear    :  109, 143
-Port SSH WS     :  80, 7788, 8181, 8282
+Port Dropbear   :  109, 143
+Port SSH WS :  80, 7788, 8181, 8282
 Port SSH SSL WS :  443
-Port SSL/TLS     :  8443,8880
-Port OVPN WS SSL :  2086
-Port OVPN SSL    :  990
-Port OVPN TCP    :  1194
-Port OVPN UDP    :  2200
-Proxy Squid        :  3128
-BadVPN UDP       :  7100, 7300, 7300
+Port SSL/TLS    :  8443,8880
+Port OVPN WS SSL:  2086
+Port OVPN SSL   :  990
+Port OVPN TCP   :  1194
+Port OVPN UDP   :  2200
+Proxy Squid     :  3128
+BadVPN UDP :  7100, 7300, 7300
 ◇━━━━━━━━━━━━━━━━━◇
 SSH UDP VIRAL : <code>$domen:1-65535@$Login:$Pass</code>
 ◇━━━━━━━━━━━━━━━━━◇
@@ -438,23 +439,23 @@ Trial SSH Premium Account
 ◇━━━━━━━━━━━━━━━━━◇
 Username        :  <code>$Login</code>
 Password        :  <code>$Pass</code>
-Expired On       :  $timer Minutes
+Expired On      :  $timer Minutes
 ◇━━━━━━━━━━━━━━━━━◇
-ISP              :  $ISP
-CITY             :  $CITY
-Host             :  <code>$domen</code>
-Login Limit      :  ${iplim} IP
+ISP             :  $ISP
+CITY            :  $CITY
+Host            :  <code>$domen</code>
+Login Limit     :  ${iplim} IP
 Port OpenSSH    :  22
-Port Dropbear    :  109, 143
-Port SSH WS     :  80, 7788, 8181, 8282
+Port Dropbear   :  109, 143
+Port SSH WS :  80, 7788, 8181, 8282
 Port SSH SSL WS :  443
-Port SSL/TLS     :  8443,8880
-Port OVPN WS SSL :  2086
-Port OVPN SSL    :  990
-Port OVPN TCP    :  1194
-Port OVPN UDP    :  2200
-Proxy Squid        :  3128
-BadVPN UDP       :  7100, 7300, 7300
+Port SSL/TLS    :  8443,8880
+Port OVPN WS SSL:  2086
+Port OVPN SSL   :  990
+Port OVPN TCP   :  1194
+Port OVPN UDP   :  2200
+Proxy Squid     :  3128
+BadVPN UDP :  7100, 7300, 7300
 ◇━━━━━━━━━━━━━━━━━◇
 SSH UDP VIRAL : <code>$domen:1-65535@$Login:$Pass</code>
 ◇━━━━━━━━━━━━━━━━━◇
