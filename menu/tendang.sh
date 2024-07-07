@@ -485,14 +485,14 @@ if [[ $date_list < $useexp ]]; then
 echo -ne
 else
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •               ${NC} $COLOR1 $NC"
+echo -e "$COLOR1 ${NC} ${COLBG1}          ${WH}• AUTOSCRIPT PREMIUM •       ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "            ${RED}PERMISSION DENIED !${NC}"
 echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
 echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
 echo -e "             \033[0;33mContact Admin :${NC}"
-echo -e "     \033[0;36mTelegram${NC}: t.me/AimanVpnExpress wa.me/+628981874211"
+echo -e "     \033[0;36mTelegram${NC}:t.me/AimanVpnExpress"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 exit
 fi
@@ -611,7 +611,7 @@ ssssh=$(cat /etc/xray/sshx/notif)
 fi
 if [ $sship = $ssssh ]; then
 if [ $type = "delete" ]; then
-TEXT="
+TEXT2="
 <code>◇━━━━━━━━━━━━━━━━◇</code>
 <b> ⚠️ SSH NOTIF MULTI LOGIN</b>
 <code>◇━━━━━━━━━━━━━━━━◇</code>
