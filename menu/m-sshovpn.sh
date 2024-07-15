@@ -833,7 +833,7 @@ CITY=$(cat /etc/xray/city)
 domain=$(cat /etc/xray/domain)
 author=$(cat /etc/profil)
 echo -e "$COLOR1╭═════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC}              ${WH}• SSH ACTIVE USERS •              ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}             ${WH}• SSH ACTIVE USERS •              ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═════════════════════════════════════════════════╯${NC}"
 rm -rf /tmp/ssh2
 sleep 3
