@@ -341,8 +341,8 @@ echo -e " $COLOR1│$NC ${COLOR1}[${WH}05${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZV
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}06${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO    ${stat_trgo}${NC}      $jumlah_trgo Accounts    ${NC} $month_tx $month_txv${NC}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}08${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF ${COLOR1}│${NC} ${COLOR1}[${WH}16${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP ${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}08${COLOR1}]${NC}${COLOR1}• ${WH}DEL EXPIRED ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF ${COLOR1}│${NC} ${COLOR1}[${WH}16${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}09${COLOR1}]${NC}${COLOR1}• ${WH}RESTART     ${COLOR1}│${NC} ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT    ${COLOR1}│${NC} ${COLOR1}[${WH}17${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING     ${COLOR1}│${NC} ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1}• ${WH}UPDATE    ${COLOR1}│${NC} ${COLOR1}[${WH}18${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
@@ -467,16 +467,14 @@ case $opt in
 05 | 5) clear ; m-noobz ;;
 06 | 6) clear ; m-trgo ;;
 07 | 7) clear ; m-system ;;
-08 | 8) clear ; m-backup ;;
+08 | 8) clear ; wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/xp.sh && chmod +x xp.sh && ./xp.sh ;;
 09 | 9) clear ; restartservice ;;
 10 | 10) clear ; running ;;
 11 | 11) clear ; m-bot ;;
 12 | 12) clear ; m-bot2 ;;
 13 | 13) clear ; reboot ;;
 14 | 14) clear ; m-update ;;
-22 | 22) clear ; running ;;
-23 | 23) clear ; restartservice ;;
-89 | 89) clear ; bannner ;;
+15 | 15) clear ; m-backup ;;
 #88 | 88) clear ; new ;;
 77 | 77) clear ; newx ;;
 99 | 99) clear ; passwd ;;
