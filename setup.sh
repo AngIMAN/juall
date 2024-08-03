@@ -337,7 +337,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dnss =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -371,7 +371,7 @@ fi
 if [[ $domain == "2" ]]; then
 clear
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│ \033[1;37mPlease select a your Choice to Set Domain${BIBlue}│${NC}"
+echo -e "${BIBlue}│ \033[1;37m    Pilih Sub-Domain           ${BIBlue}│${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo -e " "
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
@@ -540,7 +540,7 @@ clear
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do 
@@ -555,7 +555,7 @@ echo ""
 echo -e  "${BIBlue}╭══════════════════════════════════════════╮${NC}"
 echo -e  "${BIBlue}│              \033[1;37mTERIMA KASIH                ${BIBlue}│${NC}"
 echo -e  "${BIBlue}│         \033[1;37mSUDAH MENGGUNAKAN SCRIPT         ${BIBlue}│${NC}"
-echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS                 ${BIBlue}│${NC}"
+echo -e  "${BIBlue}│                \033[1;37m VPN EXPRESS              ${BIBlue}│${NC}"
 echo -e  "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -685,11 +685,11 @@ echo -e "${BIBlue}╰═══════════════════�
 wget https://raw.githubusercontent.com/AngIMAN/juall/main/menu/update.sh && chmod +x update.sh && ./update.sh
 clear
 
-echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│ ${BGCOLOR}           DOWNLOAD SLOW DNS            ${NC}${BIBlue} │${NC}"
-echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-wget https://raw.githubusercontent.com/AngIMAN/juall/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
-clear
+#echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
+#echo -e "${BIBlue}│ ${BGCOLOR}           DOWNLOAD SLOW DNS            ${NC}${BIBlue} │${NC}"
+#echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
+#wget https://raw.githubusercontent.com/AngIMAN/juall/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
+#clear
 
 
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
