@@ -8,8 +8,8 @@ green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 
 
-echo "           Tools install...!"
-echo "                  Progress..."
+echo "  The script will go through an installation process!"
+echo "        VPN EXPRESS SCRIPT ...LOADING..."
 sleep 0.5
 apt update -y
 apt upgrade -y
