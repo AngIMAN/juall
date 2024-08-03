@@ -340,16 +340,13 @@ echo -e " $COLOR1│$NC ${COLOR1}[${WH}4${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN 
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}5${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZVPNS    ${stat_noobz}${NC}      $jumlah_noobz Accounts    ${NC} ${COLOR1}THIS MONTH ${NC}" 
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}6${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO    ${stat_trgo}${NC}      $jumlah_trgo Accounts    ${NC} $month_tx $month_txv${NC}"
 echo -e " $COLOR1╰═══════════════╯╰════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}7${COLOR1}]${NC}${COLOR1}• ${WH}DELETE ALL EXPIRED ACCOUNTS"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}8${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING "
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}9${COLOR1}]${NC}${COLOR1}• ${WH}RESTART"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM "   
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL "
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF "
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT "
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1}• ${WH}UPDATE "
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}BACKUP RESTORE "
-echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
+echo -e " $COLOR1      ═══════════════════════════════════════════════${NC}"
+echo -e " $COLOR1 $NC ${COLOR1}[${WH}07${COLOR1}]${NC}${COLOR1}• ${WH}DELETE ALL EXPIRED $COLOR1│$NC ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL"
+echo -e " $COLOR1 $NC ${COLOR1}[${WH}08${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING AKUN       $COLOR1│$NC ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF "
+echo -e " $COLOR1 $NC ${COLOR1}[${WH}09${COLOR1}]${NC}${COLOR1}• ${WH}RESTART AKUN       $COLOR1│$NC ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP "
+echo -e " $COLOR1 $NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM        $COLOR1│$NC ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT VPS"   
+echo -e " $COLOR1 $NC                                     $COLOR1 │ $NC ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}UPDATE SCRIPT"
+echo -e " $COLOR1      ═══════════════════════════════════════════════${NC}"
 if [ "$Isadmin" = "ON" ]; then 
 echo -e "$COLOR1╭════════════════════ • ${WH}PANEL ADMIN VIP${NC}${COLOR1} • ════════════════╮${NC}"
 echo -e "$COLOR1│  ${WH}[${COLOR1}13${WH}]${NC} ${COLOR1}• ${WH}RESELLER IP ${WH}[${COLOR1}MENU${WH}] $COLOR1 $NC"
@@ -476,9 +473,9 @@ case $opt in
 10 | 10) clear ; m-system ;;
 11 | 11) clear ; m-bot ;;
 12 | 12) clear ; m-bot2 ;;
-13 | 13) clear ; reboot ;;
-14 | 14) clear ; m-update ;;
-15 | 15) clear ; m-backup ;;
+13 | 13) clear ; m-backup ;;
+14 | 14) clear ; reboot ;;
+15 | 15) clear ; m-update ;;
 #88 | 88) clear ; new ;;
 77 | 77) clear ; newx ;;
 99 | 99) clear ; passwd ;;
