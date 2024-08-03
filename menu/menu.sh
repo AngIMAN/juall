@@ -340,7 +340,7 @@ echo -e " $COLOR1│$NC ${COLOR1}[${WH}4${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN 
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}5${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZVPNS    ${stat_noobz}${NC}      $jumlah_noobz Accounts    ${NC} ${COLOR1}THIS MONTH ${NC}" 
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}6${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO    ${stat_trgo}${NC}      $jumlah_trgo Accounts    ${NC} $month_tx $month_txv${NC}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}7${COLOR1}]${NC}${COLOR1}• ${WH}DELETE ALL EXPIRED ACCOUNTS      
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}7${COLOR1}]${NC}${COLOR1}• ${WH}DELETE ALL EXPIRED ACCOUNTS"     
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${Ndelete all expired accounts C}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}8${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP ${WH}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}9${COLOR1}]${NC}${COLOR1}• ${WH}RESTART ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF ${COLOR1}│${NC} ${COLOR1}[${WH}16${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
