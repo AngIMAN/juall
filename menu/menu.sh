@@ -322,7 +322,7 @@ echo -e " $COLOR1  $NC${WH}    💙 CPU         ${COLOR1}: ${WH}$cpu_usage${NC}"
 echo -e " $COLOR1  $NC${WH}    🩵 CITY        ${COLOR1}: ${WH}$CITY${NC}"
 echo -e " $COLOR1  $NC${WH}    🤍 IP VPS      ${COLOR1}: ${WH}$MYIP${NC}"
 echo -e " $COLOR1  $NC${WH}    💛 DOMAIN      ${COLOR1}: ${WH}$(cat /etc/xray/domain)"
-echo -e " $COLOR1  $NC${WH}    🧡 NS DOMAIN   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
+#echo -e " $COLOR1  $NC${WH}    🧡 NS DOMAIN   ${COLOR1}: ${WH}$(cat /etc/xray/dns)"
 echo -e " $COLOR1  $NC${WH}    🩷 MASA AKTIF  ${COLOR1}: ${WH}$certificate Hari / $Exp2 •$sts ${NC}$COLOR1" 
 echo -e " $COLOR1      ═══════════════════════════════════════════════${NC}"
 echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
@@ -331,19 +331,20 @@ echo -e " $COLOR1╰════════════════════
 echo -e " "
 echo -e " ${WH}      XRAY : ${status_xray}${WH}${WH} NGINX : ${status_nginx}${WH}  DROPBEAR : ${status_beruangjatuh}${WH}  UDP : ${status_udp}"
 echo -e "    "
-echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC     ${COLOR1}MENU AKUN${NC}   ${COLOR1}${NC} ${COLOR1}STATUS ${NC}  ${COLOR1}TOTAL PREMIUM ${NC}  ${COLOR1}BANDWIDTH USED${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}01${COLOR1}]${NC}${COLOR1}• ${WH}SSH          ${status_ws}${NC}      $total_ssh Accounts   ${NC}  ${COLOR1}TODAY ${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}02${COLOR1}]${NC}${COLOR1}• ${WH}VMESS        ${status_xray}${NC}      $vmess Accounts   ${NC}  $today_tx $today_txv${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}03${COLOR1}]${NC}${COLOR1}• ${WH}VLESS        ${status_xray}${NC}      $vless Accounts   ${NC}  ${COLOR1}YESTERDAY ${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}04${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN       ${status_xray}${NC}      $trtls Accounts   ${NC}  $yesterday_tx $yesterday_txv${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}05${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZVPNS    ${stat_noobz}${NC}      $jumlah_noobz Accounts    ${NC} ${COLOR1}THIS MONTH ${NC}" 
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}06${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO    ${stat_trgo}${NC}      $jumlah_trgo Accounts    ${NC} $month_tx $month_txv${NC}"
+echo -e " $COLOR1╭══════════════════════╮╭═════════════════════════════════╮${NC}"
+echo -e " $COLOR1│$NC     ${COLOR1}MENU AKUN${NC}  ${COLOR1}${NC} ${COLOR1}STATUS ${NC}  ${COLOR1}TOTAL PREMIUM ${NC}  ${COLOR1}BANDWIDTH USED${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}1${COLOR1}]${NC}${COLOR1}• ${WH}SSH          ${status_ws}${NC}      $total_ssh Accounts   ${NC}  ${COLOR1}TODAY ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}2${COLOR1}]${NC}${COLOR1}• ${WH}VMESS        ${status_xray}${NC}      $vmess Accounts   ${NC}  $today_tx $today_txv${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}3${COLOR1}]${NC}${COLOR1}• ${WH}VLESS        ${status_xray}${NC}      $vless Accounts   ${NC}  ${COLOR1}YESTERDAY ${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}4${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN       ${status_xray}${NC}      $trtls Accounts   ${NC}  $yesterday_tx $yesterday_txv${NC}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}5${COLOR1}]${NC}${COLOR1}• ${WH}NOOBZVPNS    ${stat_noobz}${NC}      $jumlah_noobz Accounts    ${NC} ${COLOR1}THIS MONTH ${NC}" 
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}6${COLOR1}]${NC}${COLOR1}• ${WH}TROJAN-GO    ${stat_trgo}${NC}      $jumlah_trgo Accounts    ${NC} $month_tx $month_txv${NC}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
-echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${NC}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}07${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP ${WH}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}08${COLOR1}]${NC}${COLOR1}• ${WH}DEL EXPIRED ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF ${COLOR1}│${NC} ${COLOR1}[${WH}16${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
-echo -e " $COLOR1│$NC ${COLOR1}[${WH}09${COLOR1}]${NC}${COLOR1}• ${WH}RESTART     ${COLOR1}│${NC} ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT    ${COLOR1}│${NC} ${COLOR1}[${WH}17${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}7${COLOR1}]${NC}${COLOR1}• ${WH}DELETE ALL EXPIRED ACCOUNTS      
+echo -e " $COLOR1╭═════════════════════════════════════════════════════════╮${Ndelete all expired accounts C}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}8${COLOR1}]${NC}${COLOR1}• ${WH}MENU SYSTEM ${COLOR1}│${NC} ${COLOR1}[${WH}11${COLOR1}]${NC}${COLOR1}• ${WH}BOT PANEL ${COLOR1}│${NC} ${COLOR1}[${WH}15${COLOR1}]${NC}${COLOR1}• ${WH}MENU BACKUP ${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}9${COLOR1}]${NC}${COLOR1}• ${WH}RESTART ${COLOR1}│${NC} ${COLOR1}[${WH}12${COLOR1}]${NC}${COLOR1}• ${WH}BOT NOTIF ${COLOR1}│${NC} ${COLOR1}[${WH}16${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
+echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING     ${COLOR1}│${NC} ${COLOR1}[${WH}13${COLOR1}]${NC}${COLOR1}• ${WH}REBOOT    ${COLOR1}│${NC} ${COLOR1}[${WH}17${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
 echo -e " $COLOR1│$NC ${COLOR1}[${WH}10${COLOR1}]${NC}${COLOR1}• ${WH}RUNNING     ${COLOR1}│${NC} ${COLOR1}[${WH}14${COLOR1}]${NC}${COLOR1}• ${WH}UPDATE    ${COLOR1}│${NC} ${COLOR1}[${WH}18${COLOR1}]${NC}${COLOR1}• ${WH}cooming soon${WH}"
 echo -e " $COLOR1╰═════════════════════════════════════════════════════════╯${NC}"
 if [ "$Isadmin" = "ON" ]; then 
@@ -466,8 +467,8 @@ case $opt in
 04 | 4) clear ; m-trojan ;;
 05 | 5) clear ; m-noobz ;;
 06 | 6) clear ; m-trgo ;;
-07 | 7) clear ; m-system ;;
-08 | 8) clear ; wget https://raw.githubusercontent.com/AngIMAN/juall/main/install/xp.sh && chmod +x xp.sh && ./xp.sh ;;
+07 | 7) clear ; https://raw.githubusercontent.com/AngIMAN/juall/main/install/exp.sh ;;
+08 | 8) clear ; m-system ;;
 09 | 9) clear ; restartservice ;;
 10 | 10) clear ; running ;;
 11 | 11) clear ; m-bot ;;
